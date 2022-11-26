@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.myPlants.MesCardsPlantesAdapter">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/maladies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_plantr"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_maladies"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/parasite"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_maladies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/light_black_plantr"
+            android:textSize="17sp"
+            tools:text="Maladies et carences"
+            app:layout_constraintStart_toEndOf="@id/iv_maladies"
+            app:layout_constraintTop_toTopOf="@id/iv_maladies"
+            app:layout_constraintBottom_toBottomOf="@id/iv_maladies"/>
+
+        <ImageView
+            android:id="@+id/iv_arrow_maladies"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleY="1.2"
+            android:scaleX="1.2"
+            android:layout_marginEnd="10dp"
+            android:scaleType="centerInside"
+            android:alpha="0.5"
+            android:src="@drawable/arrow_grey"
+            app:layout_constraintBottom_toBottomOf="@id/tv_maladies"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_maladies" />
+<!--        <TextView-->
+<!--            android:id="@+id/tv_description"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="25dp"-->
+<!--            android:fontFamily="@font/roboto_regular"-->
+<!--            android:text="Vérifier l'état des feuilles"-->
+<!--            android:maxLines="3"-->
+<!--            android:ellipsize="end"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:paddingTop="8dp"-->
+<!--            android:textColor="@color/extra_light_black_plantr"-->
+<!--            android:textSize="15sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tv_disease"-->
+<!--            app:layout_constraintStart_toEndOf="@id/iv_plants" />-->
+
+
+        <View
+            android:id="@+id/view_underline_maladies"
+            android:layout_width="0dp"
+            android:layout_height="1.5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/grey_plantr"
+            app:layout_constraintBottom_toTopOf="@id/iv_nuisibles"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintStart_toStartOf="@id/tv_maladies"
+            app:layout_constraintTop_toBottomOf="@id/tv_maladies" />
+
+        <ImageView
+            android:id="@+id/iv_nuisibles"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/parasite"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_underline_maladies" />
+
+        <TextView
+            android:id="@+id/tv_nuisibles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/light_black_plantr"
+            android:textSize="17sp"
+            tools:text="Nuisibles"
+            app:layout_constraintStart_toEndOf="@id/iv_nuisibles"
+            app:layout_constraintTop_toTopOf="@id/iv_nuisibles"
+            app:layout_constraintBottom_toBottomOf="@id/iv_nuisibles"/>
+
+        <ImageView
+            android:id="@+id/iv_arrow_nuisibles"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleY="1.2"
+            android:scaleX="1.2"
+            android:layout_marginEnd="10dp"
+            android:scaleType="centerInside"
+            android:alpha="0.5"
+            android:src="@drawable/arrow_grey"
+            app:layout_constraintBottom_toBottomOf="@id/tv_nuisibles"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_nuisibles" />
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_description"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="25dp"-->
+        <!--            android:fontFamily="@font/roboto_regular"-->
+        <!--            android:text="Vérifier l'état des feuilles"-->
+        <!--            android:maxLines="3"-->
+        <!--            android:ellipsize="end"-->
+        <!--            android:layout_marginEnd="20dp"-->
+        <!--            android:paddingTop="8dp"-->
+        <!--            android:textColor="@color/extra_light_black_plantr"-->
+        <!--            android:textSize="15sp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/tv_disease"-->
+        <!--            app:layout_constraintStart_toEndOf="@id/iv_plants" />-->
+
+
+        <View
+            android:id="@+id/view_underline"
+            android:layout_width="0dp"
+            android:layout_height="1.5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/grey_plantr"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintStart_toStartOf="@id/tv_nuisibles"
+            app:layout_constraintTop_toBottomOf="@id/tv_nuisibles" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

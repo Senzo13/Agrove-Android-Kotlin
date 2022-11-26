@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "515154813352",
+    "firebase_url": "https://plantr-prod.firebaseio.com",
+    "project_id": "plantr-prod",
+    "storage_bucket": "plantr-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515154813352:android:5cb6437b1042a492b2fd9d",
+        "android_client_info": {
+          "package_name": "fr.devid.plantR"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515154813352-5s72vs5li8atom4l4r7vullohf8c6pn6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsa1V6n8grax18_oDpkAF4AIxsMJInMAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515154813352-5s72vs5li8atom4l4r7vullohf8c6pn6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "515154813352-7f8pqm2c0qbvmm2up86rml6q8t9dssdq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.agrove.ios"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

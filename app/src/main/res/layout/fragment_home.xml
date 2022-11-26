@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_plantr">
+
+        <!-- BLOC 1 INVISIBLE FOR LOADING -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bloc_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_home"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/bloc_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <!-- BLOC INVISIBLE -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/invisible_top"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_home_profile_user"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="centerInside"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"
+                        android:src="?android:attr/listChoiceIndicatorSingle"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="@string/mes_jardinieres"
+                        android:textSize="21sp"
+                        android:fontFamily="@font/roboto_medium"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/iv_home_profile_user"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/iv_home_btn_bug"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="12dp"
+                        android:scaleType="centerInside"
+                        android:scaleX="1.2"
+                        android:scaleY="1.2"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_bug_report"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/iv_home_btn_add"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <ImageView
+                        android:id="@+id/iv_home_btn_add"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/boutonajouterjardiniere"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_visitor"
+                android:visibility="gone"
+                android:layout_height="185dp"
+                app:layout_constraintTop_toBottomOf="@id/bloc_1"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="00dp"
+                android:layout_marginEnd="00dp"
+                android:layout_width="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_message_acceuil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="30dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="25dp"
+                    android:scaleY="1.1"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </ImageView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_spinner_and_state"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/bloc_1"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:paddingBottom="14dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        style="@style/Widget.AppCompat.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="53dp"
+                        android:background="@drawable/spinner_bg"
+                        android:dropDownWidth="match_parent"
+                        android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                        android:popupBackground="@android:color/white"
+                        android:popupElevation="17dp"
+                        android:stateListAnimator="@drawable/spinner_sla"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrow"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                        app:layout_constraintTop_toTopOf="@id/spinner"
+                        app:layout_constraintEnd_toEndOf="@id/spinner"
+                        app:layout_constraintBottom_toBottomOf="@id/spinner"
+                        android:layout_marginEnd="15dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_title_gardener_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:letterSpacing="0.1"
+                    android:visibility="gone"
+                    android:text="@string/state_gardener"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toStartOf="@id/cl_parent_state_gardener"
+                    app:layout_constraintTop_toBottomOf="@id/cl_spinner" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_parent_state_gardener"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:visibility="gone"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title_gardener_state">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/white_plantr"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="3dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/cl_state_gardener"
+                            android:layout_width="match_parent"
+                            android:layout_height="68dp"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp">
+
+                            <ProgressBar
+                                android:id="@+id/pb_bar_state_gardener_general"
+                                android:layout_width="match_parent"
+                                android:layout_height="10dp"
+                                android:layout_marginTop="20dp"
+                                android:indeterminateOnly="false"
+                                android:progressDrawable="@drawable/custom_general_seekbar_progress_green"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tv_state_general_gardener"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                tools:text="Bon"
+                                android:textColor="@color/dark_grey_plantr"
+                                android:textSize="@dimen/alerter_text_medium"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/pb_bar_state_gardener_general" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- TEXTVIEW INVISIBLE FOR LOADING -->
+
+        <TextView
+            android:id="@+id/tv_entretenir_ma_jardiniere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="10dp"
+            android:text="@string/entretenir_ma_jardiniere"
+            android:textAllCaps="true"
+            android:visibility="invisible"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/light_black_plantr"
+            android:textSize="13sp"
+            app:layout_constraintTop_toBottomOf="@id/bloc_parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- PROGRESSBAR VISIBLE FOR LOADING -->
+
+        <ProgressBar
+            android:id="@+id/pb_loading_spinner"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:theme="@style/GreenProgressTheme"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- SCROLLVIEW INVISIBLE FOR LOADING -->
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:scrollbarThumbVertical="@color/extra_light_black_plantr"
+            android:scrollbarFadeDuration="0"
+            android:fadeScrollbars="false"
+            app:layout_constraintBottom_toTopOf="@id/cl_background_bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_entretenir_ma_jardiniere"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_group_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:id="@+id/ll_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:clickable="true"
+                    android:foregroundGravity="center_vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:focusable="true">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cl_menu_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/cv_rank"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white_plantr"
+                            app:cardCornerRadius="7dp"
+                            app:cardElevation="2dp"
+                            android:outlineAmbientShadowColor="@color/black_plantr"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cl_parent_my_gardener"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageButton
+                                    android:id="@+id/imageButton"
+                                    android:layout_width="42dp"
+                                    android:layout_height="42dp"
+                                    android:adjustViewBounds="false"
+                                    android:backgroundTint="#00FFFFFF"
+                                    android:clickable="false"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/planter"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/homeMyGardener"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="2dp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:paddingRight="8dp"
+                                    android:text="@string/ma_jardiniere"
+                                    android:textColor="@color/extra_light_black_plantr"
+                                    android:textSize="17sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/imageButton"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                                <ImageView
+                                    android:id="@+id/iv_notification_plantr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/circle_notifications"
+                                    android:visibility="gone"
+                                    android:layout_marginBottom="16dp"
+                                    android:layout_marginStart="16dp"
+                                    app:layout_constraintEnd_toEndOf="@id/homeMyGardener"
+                                    app:layout_constraintTop_toTopOf="@id/homeMyGardener"
+                                    app:layout_constraintBottom_toBottomOf="@id/homeMyGardener" />
+                                <ImageView
+                                    android:id="@+id/iv_arrow_my_gardener"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerInside"
+                                    android:scaleX="1.2"
+                                    android:scaleY="1.2"
+                                    android:layout_marginEnd="10dp"
+                                    android:alpha="0.5"
+                                    android:src="@drawable/arrow_grey"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:paddingStart="20dp"
+                        android:paddingTop="3dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="3dp">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/cv_mes_plantes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            app:cardBackgroundColor="@color/white_plantr"
+                            app:cardCornerRadius="7dp"
+                            app:cardElevation="2dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cl_menu_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <ImageButton
+                                    android:id="@+id/ib_plant"
+                                    android:layout_width="42dp"
+                                    android:layout_height="42dp"
+                                    android:adjustViewBounds="false"
+                                    android:backgroundTint="#00FFFFFF"
+                                    android:scaleType="centerInside"
+                                    android:scaleX="1.1"
+                                    android:scaleY="1.1"
+                                    android:src="@drawable/plants"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/home_mes_plants"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="2dp"
+                                    android:paddingRight="8dp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:text="@string/mes_plantes"
+                                    android:textColor="@color/extra_light_black_plantr"
+                                    android:textSize="17sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/ib_plant"
+                                    app:layout_constraintTop_toTopOf="parent"/>
+                                <ImageView
+                                    android:id="@+id/iv_notification"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/circle_notifications"
+                                    android:visibility="gone"
+                                    android:layout_marginBottom="16dp"
+                                    android:layout_marginStart="16dp"
+                                    app:layout_constraintEnd_toEndOf="@id/home_mes_plants"
+                                    app:layout_constraintTop_toTopOf="@id/home_mes_plants"
+                                    app:layout_constraintBottom_toBottomOf="@id/home_mes_plants" />
+                                <ImageView
+                                    android:id="@+id/iv_arrow_my_plants"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerInside"
+                                    android:scaleX="1.2"
+                                    android:scaleY="1.2"
+                                    android:layout_marginEnd="10dp"
+                                    android:alpha="0.5"
+                                    android:src="@drawable/arrow_grey"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:paddingStart="20dp"
+                        android:paddingTop="3dp"
+                        android:clickable="false"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="3dp">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/cv_my_tasks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            app:cardBackgroundColor="@color/white_plantr"
+                            app:cardCornerRadius="7dp"
+                            app:cardElevation="2dp"
+                            android:clickable="false"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cl_menu_3"
+                                android:layout_width="match_parent"
+                                android:clickable="false"
+                                android:layout_height="wrap_content">
+
+                                <ImageButton
+                                    android:id="@+id/ib_tâches"
+                                    android:layout_width="42dp"
+                                    android:layout_height="42dp"
+                                    android:adjustViewBounds="false"
+                                    android:backgroundTint="#00FFFFFF"
+                                    android:scaleType="centerInside"
+                                    android:scaleX="1.1"
+                                    android:scaleY="1.1"
+                                    android:clickable="false"
+                                    android:src="@drawable/tasks"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/home_my_tasks"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="2dp"
+                                    android:text="@string/mes_missions"
+                                    android:clickable="false"
+                                    android:textColor="@color/extra_light_black_plantr"
+                                    android:textSize="17sp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/ib_tâches"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/iv_arrow_missions"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleY="1.2"
+                                    android:scaleX="1.2"
+                                    android:layout_marginEnd="10dp"
+                                    android:scaleType="centerInside"
+                                    android:clickable="false"
+                                    android:alpha="0.5"
+                                    android:src="@drawable/arrow_grey"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:paddingStart="20dp"
+                        android:paddingTop="3dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="3dp">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/cv_my_friends"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:focusableInTouchMode="false"
+                            app:cardBackgroundColor="@color/white_plantr"
+                            app:cardCornerRadius="7dp"
+                            app:cardElevation="2dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cl_menu_4"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageButton
+                                    android:id="@+id/ib_amis"
+                                    android:layout_width="42dp"
+                                    android:layout_height="42dp"
+                                    android:adjustViewBounds="false"
+                                    android:backgroundTint="#00FFFFFF"
+                                    android:scaleType="centerInside"
+                                    android:scaleX="1.1"
+                                    android:scaleY="1.1"
+                                    android:src="@drawable/friends"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/home_mes_amis"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="2dp"
+                                    android:text="@string/mon_equipe"
+                                    android:paddingRight="8dp"
+                                    android:textColor="@color/extra_light_black_plantr"
+                                    android:textSize="17sp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toEndOf="@id/ib_amis"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                                <ImageView
+                                    android:id="@+id/iv_notification_team"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/circle_notifications"
+                                    android:visibility="gone"
+                                    android:layout_marginBottom="16dp"
+                                    android:layout_marginStart="16dp"
+                                    app:layout_constraintEnd_toEndOf="@id/home_mes_amis"
+                                    app:layout_constraintTop_toTopOf="@id/home_mes_amis"
+                                    app:layout_constraintBottom_toBottomOf="@id/home_mes_amis" />
+                                <ImageView
+                                    android:id="@+id/iv_arrow_friends"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleY="1.2"
+                                    android:scaleX="1.2"
+                                    android:layout_marginEnd="10dp"
+                                    android:scaleType="centerInside"
+                                    android:alpha="0.5"
+                                    android:src="@drawable/arrow_grey"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:paddingStart="20dp"
+                        android:paddingTop="3dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="3dp">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/cv_my_subscribe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            app:cardBackgroundColor="@color/white_plantr"
+                            app:cardCornerRadius="7dp"
+                            app:cardElevation="2dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cl_menu_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageButton
+                                    android:id="@+id/ib_subscribe"
+                                    android:layout_width="42dp"
+                                    android:layout_height="42dp"
+                                    android:adjustViewBounds="false"
+                                    android:backgroundTint="#00FFFFFF"
+                                    android:scaleType="centerInside"
+                                    android:scaleX="1.1"
+                                    android:scaleY="1.1"
+                                    android:src="@drawable/icon_like"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/home_my_subscribe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="2dp"
+                                    android:text="@string/mes_abonnements"
+                                    android:textColor="@color/extra_light_black_plantr"
+                                    android:textSize="17sp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toEndOf="@id/ib_subscribe"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/iv_arrow_subscribe"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleY="1.2"
+                                    android:scaleX="1.2"
+                                    android:layout_marginEnd="10dp"
+                                    android:scaleType="centerInside"
+                                    android:alpha="0.5"
+                                    android:src="@drawable/arrow_grey"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+                           <!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:clipToPadding="false"-->
+<!--                        android:paddingStart="20dp"-->
+<!--                        android:paddingTop="3dp"-->
+<!--                        android:paddingEnd="20dp"-->
+<!--                        android:paddingBottom="3dp">-->
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:id="@+id/cv_my_ble"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            app:cardBackgroundColor="@color/white_plantr"-->
+<!--                            app:cardCornerRadius="7dp"-->
+<!--                            app:cardElevation="2dp"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                                android:id="@+id/cl_menu_6"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content">-->
+
+<!--                                <ImageButton-->
+<!--                                    android:id="@+id/ib_ble"-->
+<!--                                    android:layout_width="42dp"-->
+<!--                                    android:layout_height="42dp"-->
+<!--                                    android:adjustViewBounds="false"-->
+<!--                                    android:backgroundTint="#00FFFFFF"-->
+<!--                                    android:scaleType="centerInside"-->
+<!--                                    android:scaleX="1.1"-->
+<!--                                    android:scaleY="1.1"-->
+<!--                                    android:src="@drawable/ic_ble"-->
+<!--                                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/home_my_ble"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:layout_marginStart="2dp"-->
+<!--                                    android:text="Mon bluetooth"-->
+<!--                                    android:textColor="@color/extra_light_black_plantr"-->
+<!--                                    android:textSize="17sp"-->
+<!--                                    android:fontFamily="@font/roboto_medium"-->
+<!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                    app:layout_constraintStart_toEndOf="@id/ib_ble"-->
+<!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+<!--                                <ImageView-->
+<!--                                    android:id="@+id/iv_notification_ble"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:scaleType="centerInside"-->
+<!--                                    android:src="@drawable/circle_notifications"-->
+<!--                                    android:visibility="gone"-->
+<!--                                    android:layout_marginLeft="12dp"-->
+<!--                                    android:layout_marginBottom="16dp"-->
+<!--                                    android:layout_marginStart="16dp"-->
+<!--                                    app:layout_constraintEnd_toEndOf="@id/home_my_ble"-->
+<!--                                    app:layout_constraintTop_toTopOf="@id/home_my_ble"-->
+<!--                                    app:layout_constraintBottom_toBottomOf="@id/home_my_ble" />-->
+<!--                                <ImageView-->
+<!--                                    android:id="@+id/iv_arrow_ble"-->
+<!--                                    android:layout_width="30dp"-->
+<!--                                    android:layout_height="30dp"-->
+<!--                                    android:scaleY="1.2"-->
+<!--                                    android:scaleX="1.2"-->
+<!--                                    android:layout_marginEnd="10dp"-->
+<!--                                    android:scaleType="centerInside"-->
+<!--                                    android:alpha="0.5"-->
+<!--                                    android:src="@drawable/arrow_grey"-->
+<!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </ScrollView>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/cl_background_bottom"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintHeight_percent="0.10"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent">
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:clickable="false"
+               android:scaleType="fitXY"
+               android:src="@drawable/illustration"
+               android:layout_marginBottom="-1dp"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent" />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

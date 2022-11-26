@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white_plantr"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lt_javrvis"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintBottom_toTopOf="@id/tv_loading"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf ="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/planter"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/three_leaf" />
+
+                <TextView
+                    android:id="@+id/tv_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:letterSpacing="0.1"
+                    android:text="@string/loading_plants"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/light_black_plantr"
+                    app:layout_constraintEnd_toStartOf="@id/lt_progressIndicator"
+                    android:textSize="6sp"
+                    app:layout_constraintTop_toBottomOf="@id/lt_javrvis"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lt_progressIndicator"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    tools:src="@drawable/planter"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    android:layout_marginStart="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:lottie_rawRes="@raw/progress_indicator"
+                    app:layout_constraintStart_toEndOf="@id/tv_loading"
+                    app:layout_constraintTop_toTopOf="@id/tv_loading"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_loading"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

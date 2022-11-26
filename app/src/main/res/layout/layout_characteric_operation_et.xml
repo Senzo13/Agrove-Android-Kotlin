@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_plantr"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Commande personnalisée ↓"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/roboto_medium"
+            android:letterSpacing="0.1"
+            android:textColor="@color/light_black_plantr"
+            android:textSize="14sp"
+            android:gravity="left"></TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="GO"
+            android:layout_marginEnd="33dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/white_plantr"
+            android:backgroundTint="@color/green_plantr"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn"
+            android:layout_marginStart="33dp"
+            android:paddingStart="1dp"
+            android:gravity="center_vertical"
+            android:hint="@string/input_hex"
+            android:inputType="text"
+            android:textColor="@color/black_plantr"
+            android:textColorHint="@color/dark_grey_plantr"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Commande Agrove ↓"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/roboto_medium"
+            android:letterSpacing="0.1"
+            android:textColor="@color/light_black_plantr"
+            android:textSize="14sp"></TextView>
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_rank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:cardBackgroundColor="@color/white_plantr"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/et_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_send"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/roboto_regular"
+            android:padding="10dp"
+            android:textColor="@color/dark_grey_plantr"
+            android:text="RedLed blinking(En maintenance)"
+            app:layout_constraintBottom_toBottomOf="@id/btn_send"
+            android:textSize="15sp" ></TextView>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/white_plantr"
+            android:backgroundTint="@color/red_progress_plantr"
+            android:text="GO"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/et_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_send1"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/dark_grey_plantr"
+            android:text="Execute task(En maintenance)"
+            app:layout_constraintTop_toTopOf="@id/btn_send1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/btn_send1"
+            android:textSize="15sp" ></TextView>
+
+        <Button
+            android:id="@+id/btn_send1"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/white_plantr"
+            android:backgroundTint="@color/red_progress_plantr"
+            android:text="GO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_send"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/et_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_clear"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/dark_grey_plantr"
+            android:text="Clear User Tasks"
+            app:layout_constraintTop_toTopOf="@id/btn_clear"
+            app:layout_constraintBottom_toBottomOf="@id/btn_clear"
+            android:textSize="15sp" ></TextView>
+
+        <TextView
+            android:id="@+id/et_get_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_clear"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/dark_grey_plantr"
+            android:text="Create get data(En test)"
+            app:layout_constraintTop_toBottomOf="@id/et_clear"
+            app:layout_constraintBottom_toBottomOf="@id/btn_get_data"
+            android:textSize="15sp" ></TextView>
+
+        <TextView
+            android:id="@+id/et_exec_get_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_clear"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/dark_grey_plantr"
+            android:text="Exec get data(En test)"
+            app:layout_constraintTop_toBottomOf="@id/et_get_data"
+            app:layout_constraintBottom_toBottomOf="@id/btn_exec_data"
+            android:textSize="15sp" ></TextView>
+        <TextView
+            android:id="@+id/et_stop_exec_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_clear"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/dark_grey_plantr"
+            android:text="Stop exec data(En test)"
+            app:layout_constraintTop_toBottomOf="@id/et_exec_get_data"
+            app:layout_constraintBottom_toBottomOf="@id/btn_stop_get_data"
+            android:textSize="15sp" ></TextView>
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="GO"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/white_plantr"
+            android:backgroundTint="@color/greenFonce_plantr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_send1"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/btn_get_data"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="GO"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/white_plantr"
+            android:backgroundTint="@color/green_plantr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_clear"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_exec_data"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="GO"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/white_plantr"
+            android:backgroundTint="@color/green_plantr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_get_data"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_stop_get_data"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="GO"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/white_plantr"
+            android:backgroundTint="@color/green_plantr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_exec_data"
+            android:textSize="16sp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

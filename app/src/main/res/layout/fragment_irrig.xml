@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.myTasks.TasksFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_plantr">
+
+        <LinearLayout
+            android:id="@+id/ll_parent_ofparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/green_plantr"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginStart="25dp"
+                    android:text="@string/my_irrig"
+                    android:textColor="@color/white_plantr"
+                    android:textSize="21sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_back"
+                    app:layout_constraintStart_toEndOf="@id/iv_back"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/iv_notification"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_marginRight="12dp"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:scaleType="centerInside"-->
+<!--                    android:scaleX="1.2"-->
+<!--                    android:scaleY="1.2"-->
+<!--                    android:src="@drawable/add_member"-->
+<!--                    app:layout_constraintEnd_toStartOf="@id/iv_reglage_team"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/iv_notif"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginBottom="18dp"-->
+<!--                    android:scaleType="centerInside"-->
+<!--                    android:scaleX="0.9"-->
+<!--                    android:scaleY="0.9"-->
+<!--                    android:src="@drawable/circle_notifications"-->
+<!--                    android:visibility="gone"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@id/iv_notification"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/iv_notification"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/iv_notification"-->
+<!--                    app:layout_constraintTop_toTopOf="@id/iv_notification" />-->
+
+                <ImageView
+                    android:id="@+id/iv_reglage_team"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="8dp"
+                    android:scaleType="centerInside"
+                    android:scaleX="1"
+                    android:scaleY="1"
+                    android:src="@drawable/reglage"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/add_teamUser"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/round_gardeners_ico"
+            android:elevation="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/add_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

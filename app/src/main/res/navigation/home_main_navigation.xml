@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="fr.devid.plantR.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_plantrFragment"
+            app:destination="@id/plantrFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mesPlantesFragment"
+            app:destination="@id/mesPlantesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentTeam"
+            app:destination="@id/fragmentTeam" />
+        <action
+            android:id="@+id/action_homeFragment_to_tasksFragment"
+            app:destination="@id/tasksFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentAddGardenerJumelage"
+            app:destination="@id/fragmentAddGardenerJumelage" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentGardenerSubscribe"
+            app:destination="@id/fragmentGardenerSubscribe" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentSubscribe"
+            app:destination="@id/fragmentSubscribe" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentNotifTaskClicked"
+            app:destination="@id/fragmentNotifTaskClicked" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentChoicePrincipalGardenType"
+            app:destination="@id/fragmentChoicePrincipalGardenType" />
+        <argument
+            android:name="kit"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="typeGardener"
+            android:defaultValue='"Agrove"' />
+        <argument
+            android:name="dimension"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="type"
+            app:argType="string"
+            android:defaultValue='"Pot"' />
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentAddPotager"
+            app:destination="@id/fragmentAddPotager" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentReportBug"
+            app:destination="@id/fragmentReportBug" />
+        <action
+            android:id="@+id/action_homeFragment_to_irrig"
+            app:destination="@id/irrig" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="fr.devid.plantR.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <argument
+            android:name="visitor"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_profileFragment_to_policyFragment"
+            app:destination="@id/policyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/plantrFragment"
+        android:name="fr.devid.plantR.ui.stateGardener.PlantrFragment"
+        android:label="fragment_plantr"
+        tools:layout="@layout/fragment_plantr" >
+        <action
+            android:id="@+id/action_plantrFragment_to_tipsFragment"
+            app:destination="@id/tipsFragment" />
+        <action
+            android:id="@+id/action_plantrFragment_to_mainActivityBle"
+            app:destination="@id/mainActivityBle" />
+        <argument
+            android:name="gardenerId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_plantrFragment_to_irrigation"
+            app:destination="@id/irrigation" />
+    </fragment>
+    <fragment
+        android:id="@+id/mesPlantesFragment"
+        android:name="fr.devid.plantR.ui.myPlants.MesPlantesFragment"
+        android:label="fragment_mes_plantes"
+        tools:layout="@layout/fragment_mes_plantes" >
+        <action
+            android:id="@+id/action_mesPlantesFragment_to_fragmentHomePlants"
+            app:destination="@id/fragmentHomePlants" />
+        <action
+            android:id="@+id/action_mesPlantesFragment_to_fragmentBePlant"
+            app:destination="@id/fragmentBePlant" />
+        <action
+            android:id="@+id/action_mesPlantesFragment_to_fragmentEditPlant"
+            app:destination="@id/fragmentEditPlant" />
+        <action
+            android:id="@+id/action_mesPlantesFragment_to_fragmentWishList"
+            app:destination="@id/fragmentWishList" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTeam"
+        android:name="fr.devid.plantR.ui.myTeam.FragmentManageTeam"
+        android:label="fragment_manage_team"
+        tools:layout="@layout/fragment_manage_team" >
+        <action
+            android:id="@+id/action_fragment_manage_team_to_addFriendsFragment"
+            app:destination="@id/addFriendsFragment" />
+        <action
+            android:id="@+id/action_fragmentTeam_to_fragmentReglageTeam"
+            app:destination="@id/fragmentReglageTeam" />
+    </fragment>
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="fr.devid.plantR.ui.myTasks.TasksFragment"
+        android:label="fragment_tasks"
+        tools:layout="@layout/fragment_tasks" >
+        <action
+            android:id="@+id/action_tasksFragment_to_fragmentTipsTasks"
+            app:destination="@id/fragmentTipsTasks" />
+        <action
+            android:id="@+id/action_tasksFragment_to_fragmentTipsForTwoTasks"
+            app:destination="@id/fragmentTipsForTwoTasks" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addPlantesRenameFragment"
+        android:name="fr.devid.plantR.ui.myPlants.AddPlantesRenameFragment"
+        android:label="fragment_add_plantes_rename"
+        tools:layout="@layout/fragment_add_plantes_rename" >
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue='""' />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_addPlantesRenameFragment_to_fragmentInformations"
+            app:destination="@id/fragmentInformations" />
+        <argument
+            android:name="etage"
+            app:argType="string" />
+        <argument
+            android:name="nbEtage"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_addPlantesRenameFragment_to_mesPlantesFragment"
+            app:destination="@id/mesPlantesFragment" />
+        <argument
+            android:name="planting"
+            app:argType="string" />
+        <argument
+            android:name="sowing"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_addPlantesRenameFragment_to_fragmentWishList"
+            app:destination="@id/fragmentWishList" />
+        <argument
+            android:name="period"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/tipsFragment"
+        android:name="fr.devid.plantR.ui.stateGardener.TipsFragment"
+        android:label="fragment_conseils"
+        tools:layout="@layout/fragment_conseils" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="gardenerID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFriendsFragment"
+        android:name="fr.devid.plantR.ui.myTeam.AddFriendsFragment"
+        android:label="fragment_add_friends"
+        tools:layout="@layout/fragment_add_friends" />
+    <fragment
+        android:id="@+id/popupAddPlant"
+        android:name="fr.devid.plantR.ui.myPlants.PopupAddPlant"
+        android:label="fragment_popup_add_plant"
+        tools:layout="@layout/popup_add_plant" >
+        <action
+            android:id="@+id/action_popupAddPlant_to_fragmentHomePlants"
+            app:destination="@id/fragmentHomePlants" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentInformations"
+        android:name="fr.devid.plantR.ui.myPlants.FragmentInformations"
+        android:label="FragmentInformations"
+        tools:layout="@layout/fragment_be_plant_informations">
+        <argument
+            android:name="keys"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHomePlants"
+        android:name="fr.devid.plantR.ui.myPlants.FragmentHomePlants"
+        android:label="FragmentHomePlants"
+        tools:layout="@layout/fragment_home_plants">
+        <argument
+            android:name="etage"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_fragmentHomePlants_to_addPlantesRenameFragment"
+            app:destination="@id/addPlantesRenameFragment" />
+        <action
+            android:id="@+id/action_fragmentHomePlants_to_fragmentInformations"
+            app:destination="@id/fragmentInformations" />
+        <argument
+            android:name="nbEtage"
+            app:argType="integer" />
+        <argument
+            android:name="rangs"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="selectedRangsNumber"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentOneBePlant2"
+        android:name="fr.devid.plantR.ui.myPlants.FragmentOneBePlant"
+        android:label="FragmentOneBePlant"
+        tools:layout="@layout/fragment_be_plant_one"/>
+    <fragment
+        android:id="@+id/fragmentBePlant"
+        android:name="fr.devid.plantR.ui.myPlants.FragmentBePlant"
+        android:label="FragmentBePlant"
+        tools:layout="@layout/fragment_be_plant">
+        <argument
+            android:name="keys"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="harvested"
+            app:argType="integer" />
+        <argument
+            android:name="sowing"
+            app:argType="integer" />
+        <argument
+            android:name="etagePosition"
+            app:argType="string" />
+        <argument
+            android:name="uid"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_fragmentBePlant_to_fragmentTwoBePlant"
+            app:destination="@id/fragmentTwoBePlant" />
+        <action
+            android:id="@+id/action_fragmentBePlant_to_fragmentOneBePlant2"
+            app:destination="@id/fragmentOneBePlant2" />
+        <action
+            android:id="@+id/action_fragmentBePlant_to_fragmentTipsTasks"
+            app:destination="@id/fragmentTipsTasks" />
+        <action
+            android:id="@+id/action_fragmentBePlant_to_fragmentEditPlant"
+            app:destination="@id/fragmentEditPlant" />
+        <action
+            android:id="@+id/action_fragmentBePlant_to_fragmentTipsTasksNuisibles"
+            app:destination="@id/fragmentTipsTasksNuisibles" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTwoBePlant"
+        android:name="fr.devid.plantR.ui.myPlants.FragmentTwoBePlant"
+        android:label="FragmentTwoBePlant"
+        tools:layout="@layout/fragment_be_plant_two">
+        <action
+            android:id="@+id/action_fragmentTwoBePlant_to_fragmentTipsTasks"
+            app:destination="@id/fragmentTipsTasks" />
+        <action
+            android:id="@+id/action_fragmentTwoBePlant_to_fragmentTipsTasksNuisibles"
+            app:destination="@id/fragmentTipsTasksNuisibles" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTipsTasks"
+        android:name="fr.devid.plantR.ui.myPlants.FragmentTipsTasks"
+        android:label="FragmentTipsTasks"
+        tools:layout="@layout/fragment_conseils_my_task">
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="position"
+            app:argType="string" />
+        <argument
+            android:name="guid"
+            app:argType="string" />
+        <argument
+            android:name="listPosition"
+            app:argType="integer" />
+        <argument
+            android:name="taskId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEditPlant"
+        android:name="fr.devid.plantR.ui.myPlants.FragmentEditPlant"
+        android:label="FragmentEditPlant"
+        tools:layout="@layout/fragment_modify_plant"
+        >
+        <argument
+            android:name="guid"
+            app:argType="string" />
+        <argument
+            android:name="etage"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAddGardenerJumelage"
+        android:name="fr.devid.plantR.ui.home.FragmentAddGardenerJumelage"
+        android:label="FragmentAddGardenerJumelage"
+        tools:layout="@layout/fragment_add_gardener_jumelage">
+        <argument
+            android:name="guid"
+            app:argType="string" />
+        <argument
+            android:name="etage"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument
+            android:name="dimension"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_fragmentAddGardenerJumelage_to_fragmentAddGardenerJumelageAdress"
+            app:destination="@id/fragmentAddGardenerJumelageAdress" />
+        <argument
+            android:name="gardenerParent"
+            app:argType="string" />
+        <argument
+            android:name="rangs"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAddGardenerJumelageAdress"
+        android:name="fr.devid.plantR.ui.home.FragmentAddGardenerJumelageAdress"
+        android:label="FragmentAddGardenerJumelageAdress"
+        tools:layout="@layout/fragment_add_gardener_jumelage_gardener_adress">
+        <argument
+            android:name="guid"
+            app:argType="string" />
+        <argument
+            android:name="uid"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_fragmentAddGardenerJumelageAdress_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_fragmentAddGardenerJumelageAdress_to_fragmentChoicePrincipalGardenType"
+            app:destination="@id/fragmentChoicePrincipalGardenType" />
+        <action
+            android:id="@+id/action_fragmentAddGardenerJumelageAdress_to_fragmentSelectGardenClassic"
+            app:destination="@id/fragmentSelectGardenClassic" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentGardenerSubscribe"
+        android:name="fr.devid.plantR.ui.home.FragmentGardenerSubscribe"
+        android:label="FragmentGardenerSubscribe"
+        tools:layout="@layout/fragment_gardener_subscribe">
+        <argument
+            android:name="guid"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSubscribe"
+        android:name="fr.devid.plantR.ui.subscribe.FragmentSubscribe"
+        android:label="FragmentSubscribe"
+        tools:layout="@layout/fragment_my_gardeners_subscribe">
+        <action
+            android:id="@+id/action_fragmentSubscribe_to_fragmentGardenerSubscribe"
+            app:destination="@id/fragmentGardenerSubscribe" />
+        <action
+            android:id="@+id/action_fragmentSubscribe_to_mesPlantesSubscribeFragment"
+            app:destination="@id/mesPlantesSubscribeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mesPlantesSubscribeFragment"
+        android:name="fr.devid.plantR.ui.subscribe.MesPlantesSubscribeFragment"
+        android:label="MesPlantesSubscribeFragment"
+        tools:layout="@layout/fragment_mes_plantes_subscribe">
+        <argument
+            android:name="garedenerId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_mesPlantesSubscribeFragment_to_fragmentBePlantSubscribe"
+            app:destination="@id/fragmentBePlantSubscribe" />
+        <argument
+            android:name="garderName"
+            app:argType="string" />
+        <argument
+            android:name="gardenerType"
+            app:argType="string" />
+        <argument
+            android:name="gardenerRangs"
+            app:argType="integer" />
+        <argument
+            android:name="gardenerStage"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBePlantSubscribe"
+        android:name="fr.devid.plantR.ui.subscribe.FragmentBePlantSubscribe"
+        android:label="FragmentBePlantSubscribe"
+        tools:layout="@layout/fragment_be_plant_subscribe">
+        <argument
+            android:name="keys"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="harvested"
+            app:argType="integer" />
+        <argument
+            android:name="sowing"
+            app:argType="integer" />
+        <argument
+            android:name="etagePosition"
+            app:argType="string" />
+        <argument
+            android:name="uid"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/policyFragment"
+        android:name="fr.devid.plantR.ui.profile.PolicyFragment"
+        tools:layout="@layout/fragment_cgu"
+        android:label="PolicyFragment" />
+    <fragment
+        android:id="@+id/fragmentTipsForTwoTasks"
+        android:name="fr.devid.plantR.ui.myTasks.FragmentTipsForTwoTasks"
+        tools:layout="@layout/fragment_conseils_my_task_two_tasks_realized"
+        android:label="FragmentTipsForTwoTasks" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="position"
+            app:argType="string" />
+        <argument
+            android:name="guid"
+            app:argType="string" />
+        <argument
+            android:name="listPosition"
+            app:argType="integer" />
+        <argument
+            android:name="userName"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="userId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentWishList"
+        android:name="fr.devid.plantR.ui.myPlants.FragmentWishList"
+        tools:layout="@layout/fragment_wishlist"
+        android:label="FragmentWishList" >
+        <argument
+            android:name="stage"
+            app:argType="string"
+            android:defaultValue='""' />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentNotifTaskClicked"
+        android:name="fr.devid.plantR.ui.home.FragmentNotifTaskClicked"
+        tools:layout="@layout/fragment_task_realize"
+        android:label="FragmentNotifTaskClicked" >
+        <argument
+            android:name="plantId"
+            app:argType="string" />
+        <argument
+            android:name="stage"
+            app:argType="string" />
+        <argument
+            android:name="gardenerId"
+            app:argType="string" />
+        <argument
+            android:name="taskName"
+            app:argType="string" />
+        <argument
+            android:name="taskId"
+            app:argType="string" />
+        <argument
+            android:name="userId"
+            app:argType="string" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivityBle"
+        android:name="fr.devid.plantR.MainActivityBle"
+        tools:layout="@layout/activity_main_ble"
+        android:label="MainActivityBle" />
+    <fragment
+        android:id="@+id/fragmentAddSquareGarden"
+        android:name="fr.devid.plantR.ui.publicAppView.FragmentAddSquareGarden"
+        android:label="fragment_choice_gardener_type_potager_classic"
+        tools:layout="@layout/fragment_choice_gardener_type_potager_classic" >
+        <action
+            android:id="@+id/action_fragmentAddSquareGarden_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentChoiceGardenType"
+        android:name="fr.devid.plantR.ui.publicAppView.FragmentChoiceGardenType"
+        android:label="fragment_choice_gardener_type"
+        tools:layout="@layout/fragment_choice_gardener_type" >
+        <action
+            android:id="@+id/action_fragmentChoiceGardenType_to_fragmentSelectGarden"
+            app:destination="@id/fragmentSelectGarden" />
+        <action
+            android:id="@+id/action_fragmentChoiceGardenType_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAddPotGarden"
+        android:name="fr.devid.plantR.ui.publicAppView.FragmentAddPotGarden"
+        android:label="fragment_choice_gardener_type_pot_classic"
+        tools:layout="@layout/fragment_choice_gardener_type_pot_classic" >
+        <action
+            android:id="@+id/action_fragmentAddPotGarden_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSelectGardenClassic"
+        android:name="fr.devid.plantR.ui.publicAppView.FragmentSelectGardenClassic"
+        android:label="fragment_select_type_of_gardener_classic"
+        tools:layout="@layout/fragment_select_type_of_gardener_classic" >
+        <action
+            android:id="@+id/action_fragmentSelectGardenClassic_to_fragmentAddPotGarden"
+            app:destination="@id/fragmentAddPotGarden" />
+        <action
+            android:id="@+id/action_fragmentSelectGardenClassic_to_fragmentAddSquareGarden"
+            app:destination="@id/fragmentAddSquareGarden" />
+        <action
+            android:id="@+id/action_fragmentSelectGardenClassic_to_fragmentAddGardener"
+            app:destination="@id/fragmentAddGardener" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSelectGarden"
+        android:name="fr.devid.plantR.ui.publicAppView.FragmentSelectGarden"
+        android:label="fragment_select_type_of_gardener"
+        tools:layout="@layout/fragment_select_type_of_gardener" >
+        <action
+            android:id="@+id/action_fragmentSelectGarden_to_fragmentAddPotGarden"
+            app:destination="@id/fragmentAddPotGarden" />
+        <action
+            android:id="@+id/action_fragmentSelectGarden_to_fragmentAddGardener"
+            app:destination="@id/fragmentAddGardener" />
+        <action
+            android:id="@+id/action_fragmentSelectGarden_to_fragmentAddSquareGarden"
+            app:destination="@id/fragmentAddSquareGarden" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAddGardener"
+        android:name="fr.devid.plantR.ui.publicAppView.FragmentAddGardener"
+        android:label="fragment_choice_gardener_type_gardener"
+        tools:layout="@layout/fragment_choice_gardener_type_gardener" >
+        <action
+            android:id="@+id/action_fragmentAddGardener_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentChoicePrincipalGardenType"
+        android:name="fr.devid.plantR.ui.publicAppView.FragmentChoicePrincipalGardenType"
+        android:label="fragment_gardener_type"
+        tools:layout="@layout/fragment_gardener_type" >
+        <action
+            android:id="@+id/action_fragmentChoicePrincipalGardenType_to_fragmentChoiceGardenType"
+            app:destination="@id/fragmentChoiceGardenType" />
+        <action
+            android:id="@+id/action_fragmentChoicePrincipalGardenType_to_fragmentSelectGardenClassic"
+            app:destination="@id/fragmentSelectGardenClassic" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAddPotager"
+        android:name="fr.devid.plantR.ui.publicAppView.FragmentAddPotager"
+        android:label="fragment_add_config_potager_agrove"
+        tools:layout="@layout/fragment_add_config_potager_agrove" >
+        <argument
+            android:name="type"
+            android:defaultValue='"Classic"' />
+        <argument
+            android:name="typeGardener"
+            android:defaultValue="Pot" />
+        <argument
+            android:name="dimension"
+            android:defaultValue="-1" />
+        <argument
+            android:name="gardenerId"
+            app:argType="string"
+            android:defaultValue='""' />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentReportBug"
+        android:name="fr.devid.plantR.ui.home.FragmentReportBug"
+        android:label="FragmentReportBug"
+        tools:layout="@layout/fragment_bug_report"/>
+    <fragment
+        android:id="@+id/fragmentTipsTasksNuisibles"
+        android:name="fr.devid.plantR.ui.myPlants.FragmentTipsTasksNuisibles"
+        tools:layout="@layout/fragment_conseils_my_task_nuisibles"
+        android:label="FragmentTipsTasksNuisibles" >
+        <argument
+            android:name="keyPlant"
+            app:argType="string" />
+        <argument android:name="keyNuisible"
+            app:argType="string" />
+        <argument
+            android:name="nameNuisible"
+            app:argType="string" />
+        <argument
+            android:name="imageNuisible"
+            app:argType="string" />
+        <argument
+            android:name="descriptionNuisible"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentReglageTeam"
+        android:name="fr.devid.plantR.ui.myTeam.FragmentReglageTeam"
+        tools:layout="@layout/fragment_reglage_team"
+        android:label="FragmentReglageTeam" >
+        <argument
+            android:name="ispublic"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/irrig"
+        android:name="fr.devid.plantR.ui.irrig.Irrig"
+        tools:layout="@layout/fragment_irrig"
+        android:label="Irrig" />
+    <fragment
+        android:id="@+id/irrigation"
+        android:name="fr.devid.plantR.ui.stateGardener.Irrigation"
+        tools:layout="@layout/fragment_adjust_watering"
+
+        android:label="Irrigation" />
+
+</navigation>

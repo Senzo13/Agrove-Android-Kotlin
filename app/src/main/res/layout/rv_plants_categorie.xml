@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.myPlants.MesCardsPlantesAdapter">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/listePlants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_plantr"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_plants"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            tools:src="@drawable/plants"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name_categorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/light_black_plantr"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@id/iv_plants"
+            app:layout_constraintTop_toTopOf="@id/iv_plants"
+            tools:text="Nom_de_la_categorie" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_regular"
+            android:maxLines="2"
+            android:paddingTop="8dp"
+            tools:text="description"
+            android:textColor="@color/extra_light_black_plantr"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_plants"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_plants"
+            app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_plants"></androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_underline"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/grey_plantr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_description"
+            app:layout_constraintTop_toBottomOf="@id/cl_bottom" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_underline"></androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

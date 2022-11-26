@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.myPlants.FragmentTipsTasks">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_plantr">
+
+        <LinearLayout
+            android:id="@+id/ll_parent_ofparent"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/green_plantr"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="24dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_pageName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:paddingLeft="30dp"
+                    tools:text="NomMissions"
+                    android:textColor="@color/white_plantr"
+                    android:textSize="21sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_back"
+                    app:layout_constraintStart_toEndOf="@id/iv_back"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="4dp"
+            android:fadeScrollbars="false"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarThumbVertical="@color/extra_light_black_plantr"
+            app:layout_constraintBottom_toTopOf="@id/bt_success"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_parent_ofparent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp">
+
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:letterSpacing="0.1"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/LEGEND_MISSION_NAME"
+                    android:textAllCaps="true"
+                    android:textColor="@color/light_black_plantr"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/cl_parent_mission"
+
+                    tools:layout_editor_absoluteY="15dp" />
+
+
+                <TextView
+                    android:id="@+id/tv_name_my_mission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:letterSpacing="0.1"
+                    android:layout_marginTop="12dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/light_black_plantr"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/tv_title"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="TAILLER" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name_my_mission"
+                    app:layout_constraintStart_toStartOf="@id/tv_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/cl_parent">
+
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.1"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:text="@string/task_description"
+                        android:layout_marginEnd="20dp"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/dark_grey_plantr"
+                        android:textSize="13sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_parent_mission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cl_parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/white_plantr"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="2dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="20dp"
+                            android:paddingBottom="12dp"
+                            android:paddingTop="12dp"
+                            android:paddingEnd="20dp">
+
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cl_tools"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="1dp">
+
+                                <TextView
+                                    android:id="@+id/tv_legend_tools"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textColor="@color/black_plantr"
+                                    android:textSize="14sp"
+                                    android:text="@string/LEGEND_TOOLS"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_secateur"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/secateur"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_spray"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:visibility="gone"
+                                    android:src="@drawable/spray"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_tools_secateur"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_rateau"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:visibility="gone"
+                                    android:src="@drawable/rateau"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_tools_spray"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_pelle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:src="@drawable/pelle"
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_tools_rateau"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_gants"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:src="@drawable/gants"
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_tools_pelle"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_arrosoir"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:src="@drawable/arrosoir"
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_tools_gants"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_ciseaux"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:src="@drawable/ciseaux"
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_tools_arrosoir"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_binette"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:src="@drawable/binette"
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_tools_ciseaux"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_couteau"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:src="@drawable/couteau"
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_tools_binette"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_fertilisant"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:src="@drawable/fertilisant"
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_tools_couteau"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_godets"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:src="@drawable/godets"
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_tools_fertilisant"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_ficelle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:src="@drawable/ficelle"
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_tools_godets"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_paille"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:src="@drawable/paille"
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_tools_ficelle"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_pinceau"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:src="@drawable/pinceau"
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_tools_ficelle"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_verre"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:src="@drawable/verre"
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_tools_pinceau"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_tuteur"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:src="@drawable/tuteur"
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_tools_verre"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_semoir"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:src="@drawable/semoir"
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_tools_tuteur"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_tools_savon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside"
+                                    android:scaleY="1"
+                                    android:scaleX="1"
+                                    android:src="@drawable/savon"
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_tools_semoir"
+                                    app:layout_constraintTop_toTopOf="@id/tv_legend_tools"
+                                    app:layout_constraintBottom_toBottomOf="@id/tv_legend_tools"/>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cl_inTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                app:layout_constraintTop_toBottomOf="@id/cl_tools"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="1dp">
+
+                                <TextView
+                                    android:id="@+id/tv_legend_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textColor="@color/black_plantr"
+                                    android:textSize="14sp"
+                                    android:text="@string/LEGEND_INTIME"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_time_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:text="10 min"
+                                    android:layout_marginEnd="4dp"
+                                    android:textColor="@color/dark_grey_plantr"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textSize="13sp"/>
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cl_priority"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginEnd="1dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/cl_inTime">
+
+                                <TextView
+                                    android:id="@+id/tv_priority"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text="@string/LEGEND_PRIORITY"
+                                    android:textColor="@color/black_plantr"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_prio_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textColor="@color/dark_grey_plantr"
+                                    android:textSize="13sp"
+                                    android:layout_marginRight="4dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@id/iv_prio"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:text="Fortement recommandée" />
+
+                                <ImageView
+                                    android:id="@+id/iv_prio"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleX="0.7"
+                                    android:scaleY="0.7"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/important"
+                                    android:visibility="gone"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <!--FIN-->
+
+
+                <TextView
+                    android:id="@+id/tv_title_power_solar"
+                    android:layout_width="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/cl_parent_mission"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/LEGEND_PLANT"
+                    android:textAllCaps="true"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/light_black_plantr"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toStartOf="@id/cl_parent_power_solar" />
+                <TextView
+                    android:id="@+id/tv_name_my_plant"
+                    android:layout_width="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/cl_parent_mission"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="3dp"
+                    tools:text="TOMATE"
+                    android:textAllCaps="true"
+                    android:letterSpacing="0.1"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/light_black_plantr"
+                    android:textSize="13sp"
+                   app:layout_constraintStart_toEndOf="@id/tv_title_power_solar"></TextView>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_parent_power_solar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title_power_solar">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/white_plantr"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="2dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp">
+
+                            <ImageView
+                                android:id="@+id/iv_etage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerInside"
+                                android:layout_marginStart="8dp"
+                                android:scaleX="1.1"
+                                android:scaleY="1"
+                                android:src="@drawable/floor1_green"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                            <TextView
+                                android:id="@+id/tv_legend_etage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                tools:text="Etage 1"
+                                android:includeFontPadding="false"
+                                layout_marginBottom="-3dp"
+                                android:textColor="@color/dark_grey_plantr"
+                                android:textSize="14sp"
+                                android:layout_marginStart="12dp"
+                                app:layout_constraintStart_toEndOf="@id/iv_etage"
+                                app:layout_constraintBottom_toBottomOf="@id/iv_etage" />
+
+                            <ImageView
+                                android:id="@+id/iv_emplacement"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX="1"
+                                android:scaleY="1"
+                                android:src="@drawable/emplacement_2"
+                                android:layout_marginBottom="-2dp"
+                                android:rotation="0"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="14dp"
+                                app:layout_constraintTop_toTopOf="@id/tv_legend_position"
+                                app:layout_constraintEnd_toStartOf="@id/tv_legend_position"
+                                app:layout_constraintBottom_toBottomOf="@id/iv_etage"/>
+
+                            <TextView
+                                android:id="@+id/tv_legend_position"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                tools:text="Emplacement 2"
+                                android:textColor="@color/dark_grey_plantr"
+                                android:textSize="14sp"
+                                android:layout_marginEnd="8dp"
+                                layout_marginBottom="-3dp"
+
+                                android:includeFontPadding="false"
+                                android:layout_marginStart="5dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintBottom_toBottomOf="@id/iv_etage" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                <TextView
+                    android:id="@+id/tv_title_how_todo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:letterSpacing="0.1"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/LEGEND_HOWTODO"
+                    android:textAllCaps="true"
+                    android:textColor="@color/light_black_plantr"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toStartOf="@id/cl_parent_power_solar"
+                    app:layout_constraintTop_toBottomOf="@id/cl_parent_power_solar"/>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_parent_youtube"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title_how_todo">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/cl_youtube_video"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent">
+
+                            <androidx.fragment.app.FragmentContainerView
+                                android:id="@+id/youtube_fragment"
+                                android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+                                android:layout_width="match_parent"
+                                android:layout_height="195dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="Instantiatable" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_fiche_mission"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/cl_youtube_video"
+                        tools:listitem="@layout/rv_fiche_missions" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <!--FIN-->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </ScrollView>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_success"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/conseils_task_valide"
+            android:textAllCaps="true"
+            android:textColor="@color/white_plantr"
+            android:textColorHighlight="#68DDA4"
+            android:textSize="14sp"
+            app:backgroundTint="@color/green_plantr"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

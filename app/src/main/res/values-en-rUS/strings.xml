@@ -1,0 +1,627 @@
+<resources>
+    <string name="app">Agrove</string>
+    <string name="sous_app_title">Growing our future</string>
+    <string name="HARVEST_ESTIMATED">Estimated harvest:</string>
+    <string name="nom">Name</string>
+    <string name="prenom">First name</string>
+    <string name="email">E-mail address</string>
+    <string name="mot_de_passe">Password</string>
+    <string name="confirmer_votre_mot_de_passe">Password Confirmation</string>
+    <string name="mot_de_passe_oublie"><u> Forgot your password ?</u>  </string>
+    <string name="title_signIn">Register</string>
+    <string name="se_connecter">To log in</string>
+    <string name="register">CREATE AN ACCOUNT</string>
+    <string name="LEGEND_NUISIBLE_NAME">Nuisible : </string>
+    <string name="orientation">Orientation</string>
+    <string name="valider_mon_inscription">TO CREATE</string>
+    <string name="LEGEND_SOINS">LES SOINS</string>
+    <string name="TITLE_CHANGE_PASSWORD">Forgot your password?</string>
+    <string name="NEW_PASSWORD">New (8 chars min.)</string>
+    <string name="not_activated">Account not activated</string>
+    <string name="DAYS">days</string>
+    <string name="reponse_popup_soins">Yes I\'m looking for a solution</string>
+    <string name="reponse_popup_soins_informer">No, i\'m asking</string>
+    <string name="SOME_DAYS">days left before harvest.</string>
+    <string name="tv_title_public_add_kit_capteur_carre">To add your vegetable garden sensor kit, please scan the QR code located on your sensor.</string>
+    <string name="tv_none_plant_in_wishlist">You have not saved any plants to your wish list yet.  Add your favorite plants here to receive reminders to sow or plant them when it’s the right season !</string>
+    <string name="pays_gardener">Country</string>
+    <string name="zipCode">Zip Code</string>
+    <string name="ERROR_API_ZIP">The postal code does not match the selected country!</string>
+    <string name="tv_title_adjust_watering">Water when soil moisture content reaches:</string>
+    <string name="tv_body_adjust_watering">Depending on the type of soil used, a recalibration of the irrigation threshold may be necessary.\n \nIf the watering is triggered too often (soil still too wet), reduce this threshold\n\ nIf the watering does not start enough (soil too dry), increase the threshold.</string>
+    <string name="bt_define">Define</string>
+    <string name="task_description">Description:</string>
+    <string name="loading_plants">Loading</string>
+    <string name="tv_adjust_watering">Adjust watering</string>
+    <string name="tv_actualise_threshold">Updating the single may take 15 minutes,\nyou can set a new threshold as soon as this setting is saved.</string>
+    <string name="STATE_LEVEL_3">Bad</string>
+    <string name="STATE_LEVEL_2">Average</string>
+    <string name="tv_current_setting">Setting in progress since </string>
+    <string name="tv_current_setting_1">to </string>
+
+    <string name="STATE_LEVEL_1">Good</string>
+    <string name="STATE_FINISH">Ended</string>
+    <string name="STATE_PUBLIC">Accessibility of the vegetable garden</string>
+    <string name="STATE_PUBLIC_ON">Are you sure you want to make \Nthe vegetable garden public?</string>
+    <string name="STATE_PUBLIC_OFF">Are you sure you want to make \Nthe vegetable garden private?</string>
+    <string name="QRCODE_ISEMPTY">No data received for the qrCode</string>
+    <string name="QRCODE">Qr code error</string>
+    <string name="check_internet">Check your internet connection</string>
+    <string name="fill_all_fields">please complete all fields</string>
+    <string name="fill_do_not_empty">The field must not be empty</string>
+    <string name="cgu_alert">You must accept our privacy policy</string>
+    <string name="FILL_EMAIL">Please enter your email</string>
+    <string name="EMAIL_DIFFER">The email does not exist</string>
+    <string name="tv_title_public_popup">A problem with</string>
+    <string name="alerter_modif_threshold">Irrigation threshold modification sent</string>
+
+    <string name="INVALID_EMAIL">Invalid email address</string>
+    <string name="EMAIL_ALREADY_USE">This email address is already in use</string>
+    <string name="different_password">Passwords do not match</string>
+    <string name="WEAK_PASSWORD">The password entered is invalid, it must contain at least 6 characters</string>
+    <string name="EIGHT_LETTERS">Your password must contain at least 8 characters</string>
+    <string name="WRONG_EMAIL_OR_PASSWORD">Incorrect email or password</string>
+    <string name="wrong_credentials">Incorrect user or password</string>
+    <string name="MODIF_SUCCESS">Modification done!</string>
+    <string name="MODIF_FAILED">Modification failed!</string>
+    <string name="LOGIN_SUCCESSFUL">Successful connection</string>
+    <string name="SUBSCRIBE_ERROR1">You already have this vegetable patch in your list.</string>
+    <string name="SUBSCRIBE_ERROR2">You cannot create a vegetable garden in your subscriptions!</string>
+    <string name="SUBSCRIBE_ERROR3">The vegetable garden has been added!</string>
+    <string name="SUBSCRIBE_ERROR4">There was a mistake with the vegetable patch!</string>
+    <string name="SUBSCRIBE_ERROR5">Your subscription to was deleted</string>
+    <string name="SUBSCRIBE_ERROR6">There was an error deleting the subscription</string>
+    <string name="ALREADY_SUBSCRIBE">You have already subscribed to this vegetable garden.</string>
+    <string name="ERROR">A problem has arisen!</string>
+    <string name="ADDRESS_NOT_FOUND">Your address cannot be found!</string>
+    <string name="GPS_NOT_FOUND">Your location cannot be found!</string>
+    <string name="gestion_team">Managing my team</string>
+    <string name="SUCCESS_SEMIS_ADD">The plant has been added for sowing!</string>
+    <string name="ECHEC_PLANT_ADD">The plant could not be added!</string>
+    <string name="SUCCESS_PLANTING_ADD">The plant has been added to be planted!</string>
+    <string name="DELETE_PLANT">The good plant was deleted</string>
+    <string name="ECHEC_DELETE_PLANT">There was a problem deleting</string>
+    <string name="NOTIF_TITLE_TASK">Task Completed</string>
+    <string name="TASK_DATE_NAME">Made by</string>
+    <string name="TASK_DATE_DATE">Carried out on</string>
+    <string name="LEGEND_PLANT">The plant :</string>
+    <string name="LEGEND_MISSION_NAME">The mission :</string>
+    <string name="LEGEND_TOOLS">Tools</string>
+    <string name="LEGEND_INTIME">Duration</string>
+    <string name="LEGEND_PRIORITY">Importance</string>
+    <string name="LEGEND_HOWTODO">How to do ?</string>
+    <string name="TASK_ATM">Missions to be carried out at the moment.</string>
+    <string name="NOT_TASK_TODAY">There is no mission to accomplish</string>
+    <string name="TASK_WEEK">There are no missions to complete this week.</string>
+
+
+    <string name="PLACE_ONE">Location 1</string>
+    <string name="PLACE_TWO">Location 2</string>
+    <string name="PLACE_THREE">Location 3</string>
+    <string name="PLACE_FOURTH">Location 4</string>
+    <string name="SEMIS_OR_PLANT">To sow or to plant</string>
+    <string name="SEMIS_OR_PLANTPopup">To sow or to plant</string>
+    <string name="SEMIS">To sow</string>
+    <string name="PLANT">To plant</string>
+
+
+    <string name="NONE_TASKS">Congratulations! You\'ve achieve all your missions !</string>
+    <string name="NONE_PLANT_NONE_TASK">Add your first plant to access to your first gardening missions.</string>
+    <string name="CONFIRM_AFTER_DATE">To validate you must select a date. "</string>
+    <string name="SUCCESS_SHARE">The link has been shared!</string>
+    <string name="SUCCESS_DELETE">has been deleted!</string>
+    <string name="CONFIRM_ONE">Are you sure to remove</string>
+    <string name="CONFIRM_TWO">from the team?</string>
+    <string name="ARE_U_FINISH_TASK">Did you carry out the mission well</string>
+    <string name="PLACE_ALREADY_USE">The location is already in use by</string>
+
+
+    <string name="QUESTION_SEMIS_OR_PLANT">Do you want to sow where \nto plant your</string>
+    <string name="QUESTION_SEMIS">Do you want to add your plant?</string>
+    <string name="QUESTION_PLANTING">Do you want to plant your plant?</string>
+    <string name="PLANT_ADD">has been added!</string>
+    <string name="plant_add_trad_4">You can sow\nyour</string>
+
+    <string name="SCAN_QRCODE">Scan the vegetable garden</string>
+
+
+    <string name="partager_jardinière">TO SHARE</string>
+    <string name="name_gardener">name</string>
+    <string name="adress_gardener">Address</string>
+    <string name="city_gardener">City</string>
+    <string name="SELECT_DIALOG">I prefer...</string>
+    <string name="TAKE_IN_GALERY">Choose from my gallery</string>
+    <string name="TAKE_PICTURE">To take a picture</string>
+    <string name="leave_it_potager">remove this vegetable garden</string>
+    <string name="add_wishlist">has been added to wishlist.</string>
+    <string name="config_ur_garden">Configure your vegetable garden!</string>
+    <string name="tv_trad_util_1">Your</string>
+    <string name="remove_from_ur_list">has been removed from your list</string>
+
+
+    <string name="SENDMAIL_CONFIRM">A confirmation email has been sent to you !</string>
+    <string name="SENDMAIL_ERROR">There was a problem sending the email!</string>
+
+
+    <string name="CANCEL">Cancel</string>
+    <string name="CONFIRM">Validate</string>
+    <string name="SAME_VALUE_GARDENER">No modification required</string>
+    <string name="nouveau_mot_de_passe">New Password</string>
+    <string name="PROFILE_MYDATA">Manage my personal data</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="PUISSANCE_SOLAIRE">Solar power</string>
+    <string name="HUMIDITY_SOL">Soil moisture</string>
+    <string name="BATTERIE">Battery</string>
+    <string name="NIVEAU_EAU">Water level</string>
+    <string name="Humidity_de_air_string">Air humidity</string>
+    <string name="Temperature">Temperature</string>
+    <string name="Luminosite_string">Brightness</string>
+    <string name="se_connecter_maj">TO LOG IN</string>
+    <string name="nouveau_compte">New account</string>
+    <string name="mon_compte">My account</string>
+    <string name="ma_progression">MY PROGRESSION</string>
+    <string name="mes_informations">MY INFORMATION</string>
+    <string name="changer">Update</string>
+    <string name="mon_id_plantr">MON ID PLANTR</string>
+    <string name="ma_jardiniere">My vegetable garden</string>
+    <string name="mes_missions">My missions</string>
+    <string name="mon_equipe">My team</string>
+    <string name="my_irrig">Irrigation</string>
+    <string name="mes_jardinieres">My gardens</string>
+    <string name="mes_abonnements">My subscriptions</string>
+    <string name="entretenir_ma_jardiniere">Maintain my vegetable garden</string>
+    <string name="reglage_team">Configure access to my team</string>
+    <string name="state_gardener">state of my vegetable garden</string>
+    <string name="vent">Vent</string>
+    <string name="climat">WEATHER</string>
+    <string name="mes_plantes">My plants</string>
+    <string name="mes_potagers">My vegetable gardens</string>
+    <string name="delete">Delete</string>
+    <string name="MANAGE_TEAM_LEGEND">Here I am responding to people who would like to join my team</string>
+    <string name="En_savoir_plus">Learn more</string>
+    <string name="savoir_plus">Learn more about our</string>
+    <string name="savoir_plus_ok">Learn more about our</string>
+
+    <string name="CONFIRM_2">Confirm</string>
+    <string name="privacy_poly">privacy policy</string>
+    <string name="privacy_poly_ok">privacy policy</string>
+
+    <string name="ajouter_potager">Add a vegetable garden</string>
+    <string name="text_reglage_team_card">I agree to receive integration requests</string>
+    <string name="to_do"><font color="white"> to achieve</font>  </string>
+    <string name="be_plant_in_progress"><font color="white"> Regular</font>  </string>
+    <string name="be_plant_my_task"><font color="white"> Missions</font>  </string>
+    <string name="be_plant_helper"><font color="white"> Infos</font>  </string>
+    <string name="to_done"><font color="white"> carried out</font>  </string>
+    <string name="etage_one"><font color="white"> LEVEL 1</font>  </string>
+    <string name="etage_two">LEVEL 2</string>
+    <string name="title_team">Team members</string>
+    <string name="title_demande">Requests \npending</string>
+    <string name="etage_three">LEVEL 3</string>
+    <string name="etage_fourth">LEVEL 4</string>
+    <string name="rangee_fourth">ROW 4</string>
+    <string name="rangee_three">ROW 3</string>
+    <string name="rangee_two">ROW 2</string>
+    <string name="rangee_one">ROW 1</string>
+    <string name="my_tasks">My missions</string>
+    <string name="my_favs">My wishes</string>
+    <string name="my_team">My team</string>
+    <string name="ajouter_une_plante">Add a plant</string>
+    <string name="add_gardener">Add a vegetable garden</string>
+    <string name="legend_add_gardener">To add your first vegetable garden, you \nmust connect to the Jardinière by \nscanning the QR Code located on it</string>
+    <string name="name_of_gardener">name of your vegetable garden</string>
+    <string name="name_of_gardener_himself">Name of the vegetable garden</string>
+    <string name="add">ADD</string>
+    <string name="succes_create_gardener"><p> Congratulation !</p>  <p> Your vegetable garden is correctly configured.</p>  <p> Would you like to give it a name?</p>  </string>
+    <string name="finish">TO END</string>
+    <string name="param_of_gardener">Adjusting my vegetable garden</string>
+    <string name="name_of_this_gardener">Name of the vegetable garden</string>
+    <string name="availability_gardener">Please indicate your availability:</string>
+    <string name="next">FOLLOWING</string>
+    <string name="small_dispo">Little available</string>
+    <string name="very_dispo">Very available</string>
+    <string name="medium_dispo">Available</string>
+    <string name="level_1">Beginner</string>
+    <string name="level_2">Amateur</string>
+    <string name="level_3">Pro</string>
+    <string name="level_in_gardener"><p> Please indicate your level in</p> gardening:</string>
+    <string name="orientation_potager"><p> Please indicate the orientation of your</p> vegetable garden :</string>
+    <string name="orientation_1">Sunny</string>
+    <string name="orientation_2">Semi sunny</string>
+    <string name="orientation_3">Shady</string>
+    <string name="tv_password_reseau">Please enter the password for this Wifi:</string>
+    <string name="tips">Advice</string>
+    <string name="rename_plants">RENAME THE PLANT</string>
+    <string name="gardener_problem_success">THE PROBLEM IS SOLVED</string>
+    <string name="invit_friends">Invite friends</string>
+    <string name="txt_friends">In order to invite your friends to join \nyour network, please use their \nPlantR IDs, available in their \nuser profiles</string>
+    <string name="id_friends">YOUR FRIEND\'S PLANTR ID</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor and vitality, so that the labor and sorrow, some important things to do eiusmod. Over the years, I will come, who will nostrud aliquip out of her the advantage of exercise, so that stimulus efforts if the school district and longevity.</string>
+    <string name="features">Characteristics</string>
+    <string name="conseils_task_valide">it is done !</string>
+    <string name="text_edit">Edit</string>
+    <string name="name_of_my_plante">NAME OF YOUR PLANT</string>
+    <string name="hamburger_delete">Delete</string>
+    <string name="hamburger_modify">Rename</string>
+    <string name="hamburger_add">Add</string>
+    <string name="plant_description">Description</string>
+    <string name="plant_association">Good Associations</string>
+    <string name="plant_bad_association">Bad Associations</string>
+
+    <string name="tv_gardener_undertop">To scan the QR Code, please use your phone \ncamera. \NTo access it click \nthe button below</string>
+    <string name="tv_add_gardener">Your vegetable garden has been added!</string>
+    <string name="tv_dialog_add_gardener">To add a vegetable patch please \nscan the QR Code located on \nthis last.</string>
+    <string name="tv_jumelage_success">Congratulation !</string>
+    <string name="tv_done_a_gardener_name">Would you like to give it a name?</string>
+    <string name="bt_finish">To end</string>
+    <string name="choice_semer">Sow</string>
+    <string name="choice_planter">Plant</string>
+    <string name="tv_confirmation_popup">YES !</string>
+    <string name="less_month">less than a month!</string>
+    <string name="GARDENER_LOCK">Well locked vegetable garden</string>
+    <string name="GARDENER_UNLOCK">Well unlocked vegetable garden</string>
+    <string name="JOIN_TEAM">joined the team!</string>
+    <string name="REMOVE_MEMBER_TEAM">well was withdrawn from the invitations!</string>
+    <string name="wishlist_sow">Sow!</string>
+    <string name="wishlist_plant">Plant!</string>
+    <string name="share_gardener">You are invited to join the %s vegetable garden team!</string>
+    <string name="tv_rej_team">You have joined the vegetable garden team</string>
+    <string name="tv_team_occuped_gardener">A team of gardeners is already taking care\nfor this vegetable garden!</string>
+    <string name="tv_team_follow">Would you like to follow its evolution?</string>
+    <string name="plant_add_trad_6">You can plant\n</string>
+    <string name="plant_add_trad_5">in</string>
+    <string name="plant_add_trad_7">month and sow in</string>
+    <string name="plant_add_trad_9">Choose a free location:</string>
+    <string name="tv_subcribe">Subscribe to this vegetable garden</string>
+    <string name="plant_add_trad_8">You can sow</string>
+    <string name="alerter_add_plant_wishlist">Plant successfully added to floor</string>
+    <string name="check_cgu">I have read and accept the privacy policy</string>
+    <string name="LEGEND_MISSION_BY_NAME">was made by</string>
+    <string name="LEGEND_MISSION_ON_PLANT">on plant</string>
+    <string name="LEGEND_MISSION_GARDEN">vegetable garden</string>
+    <string name="cgu"><br></br><h1><b>\nPrivacy Policy\n</b></h1><br></br>\nAgrove has created the Agrove application as a free application. This SERVICE is provided free of charge by Agrove and is intended to be used as is. This page is used to inform visitors about our policies for the collection, use and disclosure of personal information if anyone decides to use our service. If you choose to use our service, then you agree to the collection and use of information in connection with this policy. The personal information we collect is used to provide and improve the service. We will not use or share your information with anyone except as described in this privacy policy. The terms used in this privacy policy have the same meaning as in our terms and conditions, which is accessible to Agrove, unless otherwise specified in this privacy policy. Each user can contact us at contact@agrove.fr to delete all data collected by Agrove applications. \not<h1>  <b>\n\nCollection and use of information\n</b></h1>  <br>  </br>\n For a better experience, when using our service, we may ask you to provide us with certain personally identifiable information, including but not limited to, the use of the camera allows the user to take a photo of himself in the profile  page and also allows him to add photos of the vegetable garden in the My vegetable garden page. The user\'s gps position is used to fill in the address field, but also to get a more accurate rendering of the average temperature in the user\'s city when viewing climate parameters. The information we request will be kept by us and used as described in this privacy policy.<h1>  <b>\n\nLog data\n</b></h1>  <br>  </br> \nWe would like to inform you that whenever you use our service, if there is an error in the application, we collect data and information (through third party products) on your phone called Log Data. This connection data may include information such as your device\'s IP address, device name, operating system version, application configuration when using our service, the time and date of your use of the service and other statistics. \not<h1>  <b>\n\nCookies\n</b></h1>  <br>  </br> \nCookies are files containing a small amount of data which are generally used as anonymous unique identifiers. They are sent to your browser by the websites you visit and are stored in the internal memory of your device. This service does not explicitly use these cookies. However, the application may use code from third parties and libraries that use cookies to collect information and improve their services. You have the option of accepting or rejecting these cookies and knowing when a cookie is sent to your device. If you choose to refuse our cookies, you may not be able to use certain parts of this service. \not<h1>  <b>\n\nService providers</b></h1>  <br>  </br> \nWe may employ companies and third parties for the following reasons: To facilitate our service; To provide the service on our behalf; to provide services related to the service; or To help us analyze the use of our service. We want to inform users of this Service that these third parties have access to your personal information. The reason is to perform the tasks assigned to them on our behalf. However, they are required not to disclose or use the information for any other purpose. \n<h1><b>\nSecurity\n</b></h1><br></br>\nWe appreciate the trust you place in us by providing us with your personal information, which is why we try to use commercially acceptable means to protect it. But remember that no method of transmission over the Internet or of electronic storage is 100 %secure and reliable, and we cannot guarantee its absolute security. Links to other sites This service may contain links to other sites. If you click on a third–party link, you will be directed to that site. Note that these external sites are not managed by us. Therefore, we strongly advise you to review the privacy policy of these sites. We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services. \not<h1>
+        <b>\n\nProtection of children\'s privacy\n</b></h1>  <br>  </br> \nThese services are not intended for people under the age of 3. We do not knowingly collect personally identifiable information from children under the age of 3. In the event that we discover that a child under the age of 3 has provided us with personal information, we immediately delete it from our servers. If you are a parent or guardian and know that your child has provided us with personal information, please contact us so that we can take appropriate action. Changes to this privacy policy We may update our privacy policy from time to time. We therefore advise you to consult this page regularly to take note of any changes. We will notify you of any changes by posting the new privacy policy on this page. This policy is in effect from 2020–09-23 \n<h1>  <b>\nContact\n</b></h1>  <br>  </br> \nIf you have any questions or suggestions regarding our privacy policy, please do not hesitate to contact us at contact@agrove.fr.\n\n</string>
+    <string name="tv_reset_password">We just need your email address to send you the password reset instructions.</string>
+    <string name="tv_title_public_add_kit_capteur_jardiniere">To add your planter sensor kit, please\nscan the QR Code located on\nyour sensor.</string>
+    <string name="tv_title_public_add_kit_capteur_pot">To add your pot sensor kit, please\nscan the QR Code located on\nyour sensor.</string>
+    <string name="SEMIS_LABEL">Sowing period</string>
+    <string name="alerter_import_image">Image import successful</string>
+    <string name="tv_title_public_add_kit_cle_en_main">To add your turnkey kit, please\nscan the QR Code located on\nyour sensor.</string>
+    <string name="tv_title_public_add_kit_sensor">To add your sensor kit, please\nscan the QR Code located on\nyour sensor.</string>
+    <string name="tv_title_public_add_kit_sensor_mural">To add your sensor wall kit, please\nscan the QR Code located on\nyour sensor.</string>
+    <string name="alerter_import_image_problem">Import image error</string>
+    <string name="alerter_need_network">You must be connected to the internet!</string>
+    <string name="alerter_geoloc_location_fail">Your position location could not be found!</string>
+    <string name="alerter_address_not_found">Your address is not found!</string>
+    <string name="alerter_password_different">Attention the passwords are identical!</string>
+    <string name="alerter_choice_number_irrig">Enter a number between 1 and 100</string>
+
+    <string name="tv_util_text_by">by</string>
+    <string name="delete_plant_2">Are you sure you want to\ndelete</string>
+    <string name="delete_plant_3">favorites?</string>
+    <string name="alerter_add_garden_success">New vegetable garden added!</string>
+    <string name="alerter_old_password_not_good">The old password is not good</string>
+    <string name="alerter_qr_code_error">Error with qrCode</string>
+    <string name="alerter_not_slot">Damn! this slot is already occupied by</string>
+    <string name="alerter_sub_to_garden">You are about to subscribe to this vegetable garden</string>
+    <string name="alerter_private_garden">This vegetable garden is private!</string>
+
+    <string name="alerter_send_to_garden">Your request has been successfully sent</string>
+    <string name="delete_plant">Are you sure you want to\ndelete this plant?</string>
+    <string name="RECOLTE_LABEL">Harvest period</string>
+    <string name="tv_title_public_add_parcelle">To add your Parcel, please\scan the QR Code located once!</string>
+
+    <string name="add_trad_10">Where would you like</string>
+    <string name="add_trad_11">Your</string>
+
+    <string name="M1">January</string>
+    <string name="M2">February</string>
+    <string name="M3">Mars</string>
+    <string name="M4">Avril</string>
+    <string name="M5">May</string>
+    <string name="M6">June</string>
+    <string name="M7">July</string>
+    <string name="M8">August</string>
+    <string name="M9">September</string>
+    <string name="M10">October</string>
+    <string name="M11">November</string>
+    <string name="M12">December</string>
+
+
+
+    <string name="menu_1">open ticket</string>
+    <string name="menu_2">ticket closed</string>
+
+    <string name="GARDENER_CHOICE">What do you want to do ?</string>
+    <string name="GARDENER_CHOICE_SUB">Subscribe to this vegetable garden!</string>
+    <string name="GARDENER_CHOICE_JOIN">Ask to join \nthe gardener\'s team!</string>
+    <string name="GARDENER_CHOICE_BODY">There is already a team \ntending to this vegetable patch \nwhat do you want to do?</string>
+    <string name="ur_email">Enter your email address</string>
+
+
+    <string name="climat_non_detect">WEATHER FORECAST :</string>
+    <string name="climat_detect">Climate detected by your sensor</string>
+    <string name="connect_capteur">CONNECT TO "SENSOR BLE"</string>
+    <string name="deconnect_capteur">DISCONNECT FROM THE "BLE SENSOR"</string>
+    <string name="deconnect_capteur_resa">BLE SENSOR already used on</string>
+
+    <string name="notifyTitle">advice</string>
+    <string name="gpsNotifyMsg">Bluetooth scanning of the current phone requires the locate function to be turned on.</string>
+    <string name="setting">Go to settings</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="start_scan">Start scan</string>
+    <string name="stop_scan">Stop scanning</string>
+    <string name="expand_search_settings">Develop search parameters</string>
+    <string name="retrieve_search_settings">Arrange the search parameters</string>
+    <string name="connect_fail">The connection failed</string>
+    <string name="active_disconnected">Disconnected</string>
+    <string name="disconnected">Lost connection</string>
+    <string name="please_open_blue">Please activate bluetooth first</string>
+    <string name="select_operation_type">Select the type of operation</string>
+    <string name="characteristic">Characteristic</string>
+
+    <string name="cocorico">Connection in progress</string>
+    <string name="data_changed">These data are transmitted</string>
+    <string name="read">Read</string>
+    <string name="write">Write to</string>
+    <string name="open_notification">Activate notifications</string>
+    <string name="close_notification">deactivate the notifications</string>
+    <string name="service_list">List of services</string>
+    <string name="characteristic_list">Feature List</string>
+    <string name="console">Operating console</string>
+    <string name="name">Equipment broadcast name.</string>
+    <string name="mac">MAC:</string>
+    <string name="service">Service</string>
+    <string name="type">Type of service (main service)</string>
+    <string name="scan_setting">Below you can configure the conditions of the device to be scanned, which may be empty.</string>
+    <string name="setting_name">Enter the broadcast name of the Bluetooth device, separated by a comma between several</string>
+    <string name="setting_mac">Enter the mac address of the bluetooth device</string>
+    <string name="setting_uuid">Enter the UUID of the Bluetooth device, separated by a comma between several</string>
+    <string name="input_hex">Please enter an order</string>
+    <string name="connect">ON</string>
+    <string name="connected">Connected</string>
+    <string name="disconnect">OFF</string>
+    <string name="enter">Enter</string>
+    <string name="autoconnect">AutoConnect ?</string>
+    <string name="potager_classique">Classic vegetable garden</string>
+    <string name="kits_potagers_connect_s">Connected vegetable garden kits</string>
+    <string name="potager_agrove">Agrove vegetable garden</string>
+    <string name="en_carr_en_pot_ou_en_jardini_re">In a square, in a pot or in a planter</string>
+    <string name="choisissez_un_type_de_potager">Choose a type of vegetable garden:</string>
+    <string name="quel_kit_potager_agrove_nvoulez_vous_ajouter">Which agrove vegetable garden kit do\nyou want to add?</string>
+    <string name="valider">To validate</string>
+    <string name="ensoleillement">Sunlight</string>
+    <string name="annuler_bouton">cancel</string>
+    <string name="ajouter_bouton">add</string>
+    <string name="rang_debutant">Beginner</string>
+    <string name="dialog_title_join_my_team">How to apply to join a team?</string>
+    <string name="dialog_title_my_team">Why form a team of gardeners?</string>
+    <string name="tv_invite_team">Here, I invite persons who garden with me in this vegetable garden !</string>
+    <string name="dialog_my_team">To manage the garden with ease! All members of a team have access to the same features.\n\nAs soon as one of them completes a mission, the others are informed by a notification.</string>
+    <string name="dialog_join_team">People who have access to the QR Code of your connected vegetable garden can request to join your team.\n\nThey just need to scan the QR Code with their Agrove app since adding a vegetable garden .\n\nTo no longer receive add requests, go to the settings, at the top right of this screen.</string>
+    <string name="GARDENER_NOTIF_CLEAN">Well done! All conditions are good to ensure your crops grow!\nYou will receive alerts here if something goes wrong.</string>
+
+    <string name="not_defined">Not defined</string>
+    <string name="sunlight_1">In the shade all day</string>
+    <string name="sunlight_2">Sun in the morning</string>
+    <string name="sunlight_3">Sun in the afternoon</string>
+    <string name="sunlight_4">Sun all day</string>
+
+    <string name="tv_util_to">Up to :</string>
+
+    <string name="title_what_choice_garden">How big is your planter?</string>
+
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="big">Big</string>
+
+    <string name="tv_location">Location</string>
+    <string name="tv_orientation">Orientation</string>
+    <string name="d_nomination">Denomination</string>
+
+    <string name="name_menu_classic_1">Garden</string>
+    <string name="name_menu_classic_2">Pot</string>
+    <string name="name_menu_classic_3">Planter</string>
+
+    <string name="tv_surname_plant">It is possible during the addition of a plant\nto give it a nickname.</string>
+    <string name="tv_association">associates well with\nthe following species:</string>
+    <string name="tv_etage">Level</string>
+    <string name="tv_toFind">Search</string>
+    <string name="tv_place">Slot</string>
+    <string name="tv_suggest">Current suggestions</string>
+    <string name="tv_composition">current planter composition</string>
+    <string name="alerter_garden">Here, I check the general state of my vegetable garden</string>
+    <string name="location_1">Garden</string>
+    <string name="location_2">Terrace</string>
+    <string name="location_3">Balcony</string>
+    <string name="location_4">Window railing</string>
+    <string name="location_5">Interior</string>
+    <string name="ur_garden_config">Configure your garden</string>
+    <string name="rename_ur_garden">Rename your vegetable garden</string>
+    <string name="ur_garden">Name of your vegetable garden</string>
+    <string name="without_alert">No alert yet</string>
+    <string name="already_plant">I already planted it</string>
+    <string name="alert_plantr_1">Here, I check the general state of my vegetable garden</string>
+    <string name="dialog_deco_1">Do you really want to logout?</string>
+    <string name="tv_dialog_deco_1">Disconnect</string>
+    <string name="tv_dialog_profil_1">Are you sure you want to remove\n</string>
+    <string name="tv_dialog_profil_2">from the list</string>
+    <string name="tv_produit_kit_capteur">The sensor kit</string>
+    <string name="tv_produit_kit_mural">The wall kit</string>
+    <string name="tv_produit_kit_main">The turnkey kit</string>
+    <string name="tv_produit_kit_parcelle">The parcel kit</string>
+    <string name="tv_conseil">Recommended</string>
+    <string name="tv_recommand">Recommended</string>
+    <string name="tv_histo_empty">Your mission history is empty.</string>
+    <string name="tv_mission_legend_consult">SELECT A DATE TO CONSULT\nYOUR OLD OR FUTURE MISSIONS.</string>
+    <string name="tv_information">Information</string>
+    <string name="tv_state_good">Good</string>
+    <string name="tv_state_medium">Medium</string>
+    <string name="tv_state_bad">Bad</string>
+    <string name="tv_numero_1">First</string>
+    <string name="tv_numero_2">Second</string>
+    <string name="tv_numero_3">Third</string>
+    <string name="tv_numero_4">Fourth</string>
+    <string name="tv_util_more">More :</string>
+    <string name="tv_all_plants">All Plants</string>
+    <string name="tv_size_1">Up to 50cm2</string>
+    <string name="tv_size_2">Up to 75cm2</string>
+    <string name="tv_size_3">Up to 1m2</string>
+    <string name="tv_scan_popup">Scan the planter qrCode!</string>
+    <string name="tv_title_public_add_garden">To add your planter, please scan the QR Code located on your sensor.</string>
+    <string name="tv_not_finish_task">Not yet!</string>
+    <string name="tv_realize_task">Achievement of a mission</string>
+    <string name="tv_exit">EXIT</string>
+    <string name="tv_select">Select</string>
+    <string name="tv_state_seche">Too Dry</string>
+    <string name="tv_state_seche_small">Dry</string>
+    <string name="tv_state_humid">Humid</string>
+    <string name="tv_state_humid_m">Slightly humid</string>
+    <string name="tv_state_humid_p">Perfectly humid</string>
+    <string name="tv_state_too_humid">Too humid</string>
+
+    <string name="tv_numero_rank_1">First row</string>
+    <string name="tv_numero_rank_2">Second rows</string>
+    <string name="tv_numero_rank_3">Third rows</string>
+    <string name="tv_numero_rank_4">Fourth rows</string>
+
+    <string name="already_seed">I already sowed it</string>
+    <string name="tv_delete_member_team">Are you sure you want to remove\n this user from the team?</string>
+    <string name="plant_add_trad_3">month</string>
+    <string name="tv_trad_kit_legend">Select the type of pot in which you will plant\nyour sensor kit:</string>
+    <string name="plant_add_trad">You can plant\nyour</string>
+    <string name="patient_popup">A little patience!</string>
+    <string name="tv_team_management">Team Management</string>
+    <string name="already_add_wish">Add to wishlist</string>
+    <string name="days_one">M</string>
+    <string name="days_two">T</string>
+    <string name="days_three">W</string>
+    <string name="days_fourth">T</string>
+    <string name="days_five">F</string>
+    <string name="days_six">S</string>
+    <string name="days_seven">S</string>
+
+
+
+    <string name="tv_fortement_recommand">Highly recommended</string>
+    <string name="tv_rank">rows</string>
+    <string name="rename_of_garden">Rename your vegetable garden</string>
+    <string name="tv_description_1">Exhibition</string>
+    <string name="tv_description_2">Water</string>
+    <string name="tv_description_3">Frost resistance</string>
+    <string name="tv_description_4">Height</string>
+    <string name="how_create_potager_finish">You can now move on to the following\nsteps to configure it..</string>
+    <string name="name_of_garden">Name of your vegetable garden</string>
+    <string name="orientation_place_1">North</string>
+    <string name="orientation_place_2">South</string>
+    <string name="orientation_place_3">East</string>
+    <string name="orientation_place_4">West</string>
+    <string name="orientation_place_5">South East</string>
+    <string name="orientation_place_6">North East</string>
+    <string name="orientation_place_7">South West</string>
+    <string name="orientation_place_8">North West</string>
+
+    <string name="how_create_potager">Creating your vegetable garden...</string>
+
+    <string name="alerter_already_garden_1">You already have</string>
+    <string name="alerter_already_garden_2">in your favorites.</string>
+    <string name="alerter_change_done">Change done!</string>
+    <string name="plant_add_trad_2">\nfrom here</string>
+    <string name="Pression">Pressure</string>
+
+    <string name="alerter_first_nav">To start navigating the app, add your first vegetable garden.</string>
+    <string name="alerter_name_ur_garden">You must name your vegetable garden!</string>
+
+    <string name="month_one">J</string>
+    <string name="month_two">F</string>
+    <string name="month_three">M</string>
+    <string name="month_fourth">A</string>
+    <string name="month_five">M</string>
+    <string name="month_six">J</string>
+    <string name="month_seven">J</string>
+    <string name="month_height">A</string>
+    <string name="month_nive">S</string>
+    <string name="month_ten">O</string>
+    <string name="month_eleven">N</string>
+    <string name="month_twelve">D</string>
+    <string name="tv_alert_problem_tips">problem is unresolved</string>
+    <string name="tv_util_join_team">You have joined the vegetable garden team</string>
+    <string name="sow_date_1">Sown on</string>
+    <string name="alerter_problem_garden_create">There was an error creating the vegetable garden</string>
+    <string name="tv_util_join_team_sub">Are you sure you want to delete\nce this subscription?</string>
+
+
+
+    <string name="tv_dialog_title_geoloc">Weather </string>
+    <string name="tv_dialog_description_geoloc">Remember to enter your zip code and country in "my account" to access our weather feature!</string>
+
+
+
+    <string name="classic_type_garden_carre_0">Small vegetable garden</string>
+    <string name="classic_type_garden_carre_1">Medium vegetable garden</string>
+    <string name="classic_type_garden_carre_2">Large vegetable garden</string>
+
+    <string name="classic_type_garden_pot_0">Small pot</string>
+    <string name="classic_type_garden_pot_1">Medium pot</string>
+    <string name="classic_type_garden_pot_2">Large pot</string>
+
+    <string name="classic_type_garden_jardiniere_0">Small gardener</string>
+    <string name="classic_type_garden_jardiniere_1">Medium gardener</string>
+    <string name="classic_type_garden_jardiniere_2">Large gardener</string>
+
+
+
+
+
+    <string name="tv_size_4">From</string>
+
+    <string name="tv_title_alert_battery">Charge the battery</string>
+    <string name="tv_description_alert_battery">Place the solar panel in a brighter environment or recharge the battery via an AC outlet</string>
+    <string name="tv_button_problem_alert_battery">Not yet!</string>
+    <string name="tv_button_ok_alert_battery">It\'s done!</string>
+
+    <string name="tv_title_alert_humidity">The earth is too dry!</string>
+    <string name="tv_description_alert_humidity">Check that the water level in the tank is sufficient and that your solar panel is sunny during the day. Water your plants so that they do not die and replace the product by facilitating the reset button.</string>
+    <string name="tv_button_problem_alert_humidity">Water is not flowing.</string>
+    <string name="tv_button_ok_alert_humidity">Water is flowing.</string>
+
+    <string name="tv_title_alert_temperature">The temperature is approaching 0°C</string>
+    <string name="tv_description_alert_temperature">There is a risk of freezing. Protect your plants if you can and empty the water from the tank. Freezing can kill your most fragile plants and damage the pump.</string>
+    <string name="tv_button_ok_alert_temperature">It\'s done!</string>
+    <string name="tv_button_problem_alert_temperature">Not yet.</string>
+
+    <string name="tv_title_alert_water">Fill \nthe tank. </string>
+    <string name="tv_description_alert_water">The water level in the tank is too low, remember to add more to the maximum.</string>
+    <string name="tv_button_ok_alert_water">It\'s done!</string>
+    <string name="tv_button_problem_alert_water">The vegetable garden has no water</string>
+
+    <string name="tv_title_alert_problem_lora">The sensor has not been sending data for 24 hours</string>
+    <string name="tv_description_alert_problem_lora">The sensor is no longer sending data. Press the reset button. </string>
+    <string name="tv_ranked">Row</string>
+
+
+    <!-- IRRIGATION STRING GESTION -->
+    <string name="tv_button_define">Define</string>
+    <string name="tv_button_defined">Ok</string>
+    <string name="tv_title_echec_irrig">The last setting failed</string>.
+    <string name="tv_description_echec_irrig">Your LoRa connection is probably at fault.</string>
+    <string name="tv_btn_echec_irrig">Try again</string>
+
+    <!-- NOTIFICATION EXTERNE STRING GESTION -->
+    <string name="tv_battery_title">🚨 Low battery!</string>
+    <string name="tv_battery_description">Be sure to orient the solar panel correctly.</string>
+
+    <string name="tv_capa_title">💧 Soil humidity is too low!</string>
+    <string name="tv_capa_description">Your soil is too dry. Check that the sprinkler system is working properly. In case of problem you can water directly yourself.</string>
+
+    <string name="tv_waterLevel_title">🚰 The tank is almost empty!</string>
+    <string name="tv_waterLevel_description">Fill your tank as soon as possible</string>
+
+    <string name="tv_panne_title">⚠ Warning</string>
+    <string name="tv_panne_description">A problem has been detected with the sensors</string>
+
+    <string name="tv_panne_title_plantr">⚠ Loss of Lora connection</string>
+    <string name="tv_date_format_panne">Last updated on:</string>
+
+</resources>

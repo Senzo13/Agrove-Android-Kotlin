@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.myPlants.MesPlantesAdapter">
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/listePlants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_plantr"
+        android:paddingStart="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/test"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv_menu_option"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_plants"
+                android:layout_width="45dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerInside"
+                android:layout_height="45dp"
+                android:src="@drawable/plants"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:scaleType="centerInside"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/circle_notifications"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@id/iv_plants"
+                app:layout_constraintStart_toStartOf="@id/iv_plants"
+                app:layout_constraintTop_toTopOf="@id/iv_plants" />
+
+            <TextView
+                android:id="@+id/tv_name_plants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/light_black_plantr"
+                android:textSize="15sp"
+                android:inputType="textImeMultiLine|textMultiLine|textNoSuggestions"
+                tools:text="Nom_de_la_plante"
+                app:layout_constraintStart_toEndOf="@id/iv_plants"
+                app:layout_constraintTop_toTopOf="@id/iv_plants" />
+
+            <ImageView
+                android:id="@+id/iv_planter"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:layout_marginTop="6dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_name_plants"
+                app:layout_constraintStart_toStartOf="@id/tv_name_plants"
+                android:src="@drawable/seeding"/>
+
+            <TextView
+                android:id="@+id/tv_planter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text=""
+                android:textSize="13sp"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingRight="8dp"
+                android:textColor="@color/dark_grey_plantr"
+                app:layout_constraintBottom_toBottomOf="@id/iv_planter"
+                app:layout_constraintStart_toEndOf="@id/iv_planter"
+                app:layout_constraintTop_toTopOf="@id/iv_planter"></TextView>
+
+            <ImageView
+                android:id="@+id/iv_seed"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:layout_marginTop="6dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_name_plants"
+                app:layout_constraintStart_toEndOf="@id/tv_planter"
+                android:src="@drawable/icon_semer"/>
+
+            <TextView
+                android:id="@+id/tv_seed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text=""
+                android:textSize="13sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/dark_grey_plantr"
+                app:layout_constraintBottom_toBottomOf="@id/iv_seed"
+                app:layout_constraintStart_toEndOf="@id/iv_seed"
+                app:layout_constraintTop_toTopOf="@id/iv_seed"></TextView>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_planter">
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:id="@+id/view_underline"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/grey_plantr"
+            android:layout_marginStart="65dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/iv_menu_option"
+            app:layout_constraintTop_toBottomOf="@id/test"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_underline"></androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/iv_menu_option"
+            android:layout_width="60dp"
+            android:paddingTop="5dp"
+            android:layout_height="60dp"
+            tools:showIn="@layout/rv_plants"
+            android:scaleType="centerInside"
+            android:src="@drawable/more_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

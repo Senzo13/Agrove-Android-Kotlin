@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/red_progress_plantr" />
+
+    <TextView
+        android:id="@+id/txt_mac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/red_progress_plantr" />
+
+    <ListView
+        android:id="@+id/list_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:divider="@color/black_plantr"
+        android:dividerHeight="0.5dp"
+        android:paddingEnd="10dp"
+        android:cacheColorHint="@color/black_plantr"
+        android:paddingStart="10dp"
+        android:scrollbars="none" />
+
+</LinearLayout>

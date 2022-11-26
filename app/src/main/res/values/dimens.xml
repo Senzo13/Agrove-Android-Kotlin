@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_bottom_padding">72dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="spacing_normal">8dp</dimen>
+    <dimen name="spacing_micro">4dp</dimen>
+    <dimen name="text_size_h1">22sp</dimen>
+    <dimen name="text_size_h2">20sp</dimen>
+    <dimen name="text_size_h3">18sp</dimen>
+    <dimen name="card_side_margin">12dp</dimen>
+    <dimen name="card_bottom_margin">26dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="padding_medium">20dp</dimen>
+    <dimen name="padding_high">30dp</dimen>
+    <dimen name="padding_default">10dp</dimen>
+    <dimen name="padding_low">5dp</dimen>
+    <dimen name="padding_highest">40dp</dimen>
+    <dimen name="switch_padding">-1dp</dimen>
+    <dimen name="switch_radius">36dp</dimen>
+    <dimen name="switch_size">36dp</dimen>
+</resources>

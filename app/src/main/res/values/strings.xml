@@ -1,0 +1,681 @@
+<resources>
+    <!-- GENERIC -->
+    <string name="app">Agrove</string>
+    <string name="sous_app_title">Cultivons notre avenir</string>
+    <!-- HARVEST PLANT -->
+    <string name="HARVEST_ESTIMATED">Récolte estimée : </string>
+    <!-- INFORMATION USER CHECK LAYOUT LOGIN/REGISTER -->
+    <string name="nom">Nom</string>
+    <string name="prenom">Prénom</string>
+    <string name="email">Adresse email</string>
+    <string name="ur_email">Entrez votre email</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="confirmer_votre_mot_de_passe">Confirmation du mot de passe</string>
+    <string name="mot_de_passe_oublie"><u>Mot de passe oublié ?</u></string>
+    <string name="title_signIn">S\'enregister</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="register">CRÉER UN COMPTE</string>
+    <string name="valider_mon_inscription">CRÉER</string>
+    <string name="TITLE_CHANGE_PASSWORD">Mot de passe oublié?</string>
+    <string name="NEW_PASSWORD">Nouveau (8 caract. min.)</string>
+    <string name="not_activated">Compte non activé</string>
+    <string name="name_of_garden">Nom de votre potager</string>
+    <string name="rename_of_garden">Renommez votre potager</string>
+    <string name="how_create_potager">Création de votre potager en cours ...</string>
+    <string name="how_create_potager_finish">Vous pouvez dorénavant passer aux étape\nsuivantes afin de le paramétrer..</string>
+    <!-- DAY -->
+    <string name="DAYS">jours</string>
+    <string name="SOME_DAYS">jours restant avant la récolte.</string>
+    <!-- STATE OF GARDENER -->
+    <string name="STATE_LEVEL_3">Mauvais</string>
+    <string name="STATE_LEVEL_2">Moyen</string>
+    <string name="STATE_LEVEL_1">Bon</string>
+    <string name="STATE_FINISH">Terminé</string>
+    <string name="STATE_PUBLIC">Accessibilité du potager</string>
+    <string name="STATE_PUBLIC_ON">Voulez-vous vraiment rendre\nle potager publique ?</string>
+    <string name="STATE_PUBLIC_OFF">Voulez-vous vraiment rendre\nle potager privée ?</string>
+    <!-- ERROR/CHECK MESSAGE -->
+    <string name="QRCODE_ISEMPTY">Aucune donnée reçu pour le qrCode</string>
+    <string name="QRCODE">Qr code error</string>
+    <string name="zipCode">Code postal</string>
+    <string name="ERROR_API_ZIP">Le code postal ne correspond pas avec le pays selectionné !</string>
+    <string name="check_internet">Vérifiez votre connexion internet</string>
+    <string name="fill_all_fields">Veuillez remplir tous les champs</string>
+    <string name="fill_do_not_empty">Le champ ne doit pas être vide</string>
+    <string name="cgu_alert">Vous devez accepter notre politique de confidentialité</string>
+    <string name="FILL_EMAIL">Veuillez entrer votre email</string>
+    <string name="EMAIL_DIFFER">Le mail n\'existe pas</string>
+    <string name="INVALID_EMAIL">Adresse mail non valide</string>
+    <string name="EMAIL_ALREADY_USE">Cette adresse e-mail est déjà utilisée</string>
+    <string name="different_password">Les mots de passe ne correspondent pas</string>
+    <string name="WEAK_PASSWORD">Le mot de passe entré est invalide, il doit contenir au moins 6 caractères</string>
+    <string name="EIGHT_LETTERS">Votre mot de passe doit contenir au moins 8 caractères</string>
+    <string name="WRONG_EMAIL_OR_PASSWORD">Email ou mot de passe incorrect</string>
+    <string name="wrong_credentials">Utilisateur ou mot de passe incorrect</string>
+    <string name="MODIF_SUCCESS">Modification effectuée !</string>
+    <string name="MODIF_FAILED">Modification échouée !</string>
+    <string name="LOGIN_SUCCESSFUL">Connexion réussie</string>
+    <string name="SUBSCRIBE_ERROR1">Vous avez déjà ce potager dans votre liste.</string>
+    <string name="SUBSCRIBE_ERROR2">Vous ne pouvez pas créer de potager dans vos abonnements !</string>
+    <string name="SUBSCRIBE_ERROR3">Le potager à bien été ajoutée !</string>
+    <string name="SUBSCRIBE_ERROR4">Il y a eu une erreur avec la potager !</string>
+    <string name="SUBSCRIBE_ERROR5">Votre abonnement à était supprimé</string>
+    <string name="SUBSCRIBE_ERROR6">Il y a eu une erreur lors de la suppression de l\'abonnement</string>
+    <string name="ALREADY_SUBSCRIBE">Vous êtes déjà abonnée à ce potager.</string>
+    <string name="ERROR">Un problème est survenue !</string>
+    <string name="ADDRESS_NOT_FOUND">Votre adresse est introuvable !</string>
+    <string name="GPS_NOT_FOUND">La localisation de votre position est introuvable !</string>
+
+    <!-- LAYOUT ADD PLANTE RENAME FRAGMENT -->
+    <string name="SUCCESS_SEMIS_ADD">La plante à bien été ajouté pour le semis !</string>
+    <string name="ECHEC_PLANT_ADD">La plante n\'a pas pu être ajouté !</string>
+    <string name="SUCCESS_PLANTING_ADD">La plante à bien été ajouté pour être planté !</string>
+    <string name="DELETE_PLANT">La plante à bien était supprimée</string>
+    <string name="ECHEC_DELETE_PLANT">Il y a eu un problème lors de la suppression</string>
+    <string name="alerter_need_network">Vous devez être connecté à internet !</string>
+
+<!-- LAYOUT NOTIF -->
+    <string name="NOTIF_TITLE_TASK">Tâche Éffectuée</string>
+
+    <!-- LAYOUT TIPS/TASKS -->
+    <string name="TASK_DATE_NAME">Fait par</string>
+    <string name="TASK_DATE_DATE">Réalisée le</string>
+    <string name="LEGEND_PLANT">La plante : </string>
+    <string name="LEGEND_MISSION_NAME">La mission : </string>
+    <string name="LEGEND_MISSION_BY_NAME">a été éffectuée par</string>
+    <string name="LEGEND_MISSION_ON_PLANT">sur la plante</string>
+    <string name="LEGEND_MISSION_GARDEN">du potager</string>
+    <string name="LEGEND_NUISIBLE_NAME">Nuisible : </string>
+    <string name="LEGEND_TOOLS">Outils</string>
+    <string name="LEGEND_INTIME">Durée</string>
+    <string name="LEGEND_PRIORITY">Importance</string>
+    <string name="LEGEND_HOWTODO">Comment faire ?</string>
+    <string name="LEGEND_SOINS">LES SOINS</string>
+    <!-- LAYOUT TASKS FRAGMENT -->
+    <string name="TASK_ATM">Missions à réaliser en ce moment.</string>
+    <string name="NOT_TASK_TODAY">Il n\'y a pas de mission à réaliser</string>
+    <string name="TASK_WEEK">Il n\'y a pas de missions à réaliser cette semaine.</string>
+
+    <!-- MES PLANTS ADAPTER -->
+    <string name="PLACE_ONE">Emplacement 1</string>
+    <string name="PLACE_TWO">Emplacement 2</string>
+    <string name="PLACE_THREE">Emplacement 3</string>
+    <string name="PLACE_FOURTH">Emplacement 4</string>
+
+   <!-- LAYOUT MY CARD ADAPTER -->
+    <string name="SEMIS_OR_PLANT">À semer où à planter</string>
+    <string name="SEMIS_OR_PLANTPopup">À semer où à planter</string>
+    <string name="SEMIS">À semer</string>
+    <string name="PLANT">À planter</string>
+    <string name="wishlist_sow">Semez !</string>
+    <string name="wishlist_plant">Plantez !</string>
+    <string name="less_month">moins d\'un mois !</string>
+
+    <!-- LAYOUT FRAGMENT MANAGE TEAM -->
+    <string name="NONE_TASKS">Bravo ! Vous êtes à jour de toutes vos missions !</string>
+    <string name="NONE_PLANT_NONE_TASK">Ajoutez une plante pour accéder à vos premières missions.</string>
+    <string name="CONFIRM_AFTER_DATE">Pour valider vous devez sélectionner une date."</string>
+    <string name="SUCCESS_SHARE">Le lien à bien été partagé ! </string>
+
+    <!-- LAYOUT POPUP DELETE USER TEAM -->
+    <string name="CONFIRM_ONE">Souhaitez vous vraiment enlever</string>
+    <string name="CONFIRM_TWO">de la gestion de l\'équipe ?</string>
+
+    <!-- LAYOUT POPUP FINISH MISSION -->
+    <string name="ARE_U_FINISH_TASK">Avez-vous bien réalisé la mission</string>
+
+    <!-- LAYOUT MES PLANTES FRAGMENT -->
+    <string name="PLACE_ALREADY_USE">L\'emplacement est déjà utilisée par</string>
+
+    <!-- LAYOUT POPUP SOWING PLANTING -->
+    <string name="QUESTION_SEMIS_OR_PLANT">Voulez-vous semer où \nplanter votre</string>
+    <string name="QUESTION_SEMIS">Voulez-vous ajouter votre plante ?</string>
+    <string name="QUESTION_PLANTING">Voulez-vous planter votre plante ?</string>
+    <string name="PLANT_ADD">a bien été ajoutée !</string>
+    <string name="alerter_not_slot">Zut ! cet emplacement est déjà occupé par</string>
+    <string name="alerter_qr_code_error">Erreur avec le qrCode</string>
+    <string name="alerter_geoloc_location_fail">La localisation de votre position est introuvable !</string>
+    <string name="alerter_address_not_found">Votre adresse est introuvable !</string>
+    <string name="alerter_password_different">Attention les mot de passes sont identiques !</string>
+    <string name="alerter_old_password_not_good">L\'ancien mot de passe n\'est pas le bon</string>
+
+    <!-- CAMERA QR CODE -->
+    <string name="SCAN_QRCODE">Scanner le potager</string>
+
+    <!-- LAYOUT PROFILE -->
+    <string name="partager_jardinière">PARTAGER</string>
+    <string name="name_gardener">Nom</string>
+    <string name="adress_gardener">Adresse</string>
+    <string name="city_gardener">Ville</string>
+    <string name="pays_gardener">Pays</string>
+
+    <string name="SELECT_DIALOG">Je préfère...</string>
+    <string name="TAKE_IN_GALERY">Choisir dans ma galerie</string>
+    <string name="TAKE_PICTURE">Prendre une photo</string>
+    <string name="leave_it_potager">retirer ce potager</string>
+    <string name="remove_from_ur_list">a bien été retiré de votre liste</string>
+    <string name="SUCCESS_DELETE">à bien été supprimé !</string>
+
+    <string name="config_ur_garden">Configurez votre potager !</string>
+    <string name="tv_trad_util_1">Votre</string>
+
+
+    <!-- LAYOUT LOGIN FRAGMENT -->
+    <string name="SENDMAIL_CONFIRM">Un e-mail de confirmation vous a été envoyé !</string>
+    <string name="SENDMAIL_ERROR">Il y a eu un problème lors de l\'envoie de l\'email ! </string>
+
+    <!-- LAYOUT MODAL -->
+    <string name="CANCEL">Annuler</string>
+    <string name="add_trad_10">Ou souhaitez-vous</string>
+    <string name="add_trad_11">Votre</string>
+    <string name="CONFIRM">Valider</string>
+    <string name="CONFIRM_2">Confirmer</string>
+    <string name="tv_state_seche">Trop sèche</string>
+    <string name="tv_state_seche_small">Sèche</string>
+    <string name="tv_state_humid_m">Légèrement humide</string>
+    <string name="tv_state_humid">Humide</string>
+    <string name="tv_state_humid_p">Parfaitement humide</string>
+    <string name="tv_state_too_humid">Trop humide</string>
+    <string name="MANAGE_TEAM_LEGEND">Ici, je réponds aux personnes qui\naimeraient rejoindre mon équipe</string>
+    <string name="En_savoir_plus">En savoir plus</string>
+    <string name="delete">Supprimer</string>
+    <string name="tv_all_plants">Toute les plantes</string>
+    <string name="tv_exit">SORTIR</string>
+    <string name="tv_select">Sélectionner</string>
+    <string name="tv_realize_task">Réalisation d\'une mission</string>
+    <string name="tv_not_finish_task">Non pas encore !</string>
+    <string name="already_seed">Je l\'ai déjà semer</string>
+    <string name="already_plant">Je l\'ai déjà planter</string>
+    <string name="already_add_wish">Ajouter à ma liste d\'envie</string>
+    <string name="patient_popup">Un peu de patience !</string>
+    <string name="plant_add_trad">Vous pourrez planter\nvotre</string>
+    <string name="plant_add_trad_6">Vous pourrez planter</string>
+    <string name="plant_add_trad_2">d\'ici</string>
+    <string name="plant_add_trad_3">mois</string>
+    <string name="plant_add_trad_4">Vous pourrez semer\nvotre</string>
+    <string name="alerter_add_plant_wishlist">Ajout de la plante réussie à l\'etage</string>
+    <string name="plant_add_trad_9">Choisissez un emplacement libre :</string>
+    <string name="plant_add_trad_8">Vous pourrez semer</string>
+    <string name="plant_add_trad_7">mois et semer dans</string>
+    <string name="plant_add_trad_5">dans</string>
+    <string name="tv_util_join_team">Vous avez rejoint l\'équipe du potager</string>
+    <string name="tv_util_join_team_sub">Souhaitez-vous vraiment supprimer\ncet abonnement?</string>
+
+    <string name="tv_dialog_title_geoloc">Météo</string>
+    <string name="tv_dialog_description_geoloc">Pensez à renseignner votre code postal et votre pays dans "mon compte" pour avoir accès à notre fonctionnalité météo !</string>
+
+    <string name="classic_type_garden_carre_0">Petit carré de potager</string>
+    <string name="classic_type_garden_carre_1">Moyen carré de potager</string>
+    <string name="classic_type_garden_carre_2">Grand carré de potager</string>
+
+    <string name="classic_type_garden_pot_0">Petit pot</string>
+    <string name="classic_type_garden_pot_1">Moyen pot</string>
+    <string name="classic_type_garden_pot_2">Grand pot</string>
+
+    <string name="classic_type_garden_jardiniere_0">Petite jardinière</string>
+    <string name="classic_type_garden_jardiniere_1">Moyenne jardinière</string>
+    <string name="classic_type_garden_jardiniere_2">Grande jardinière</string>
+
+    <string name="SAME_VALUE_GARDENER">Aucune modification nécessaire</string>
+    <string name="nouveau_mot_de_passe">Nouveau mot de passe</string>
+    <string name="PROFILE_MYDATA">Gérer mes données personnelles</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="PUISSANCE_SOLAIRE">Puissance solaire</string>
+    <string name="HUMIDITY_SOL">Humidité du sol</string>
+    <string name="BATTERIE">Batterie</string>
+    <string name="NIVEAU_EAU">Niveau d\'eau</string>
+    <string name="Humidity_de_air_string">Humidité de l\'air</string>
+    <string name="Temperature">Température</string>
+    <string name="Pression">Pression</string>
+    <string name="Luminosite_string">Luminosité</string>
+    <string name="tv_adjust_watering">Régler l\'arrosage</string>
+    <string name="tv_title_adjust_watering">Arroser quand le taux d’humidité du sol atteint :</string>
+    <string name="tv_current_setting">Réglage en cours...</string>
+    <string name="tv_current_setting_1">à </string>
+    <string name="tv_body_adjust_watering">En fonction du type de terre utilisée une recalibration du seuil d’irrigation peut être nécessaire.\n \nSi l’arrosage se déclenche trop souvent (terre encore trop humide), réduisez ce seuil\n\nSi l’arrosage ne se déclenche pas assez (terre trop sèche), augmentez le seuil.</string>
+    <string name="tv_actualise_threshold">L’actualisation du seuil peut prendre 15 minutes.\n \nVous pourrez paramétrer un nouveau seuil dès que ce réglage sera enregistré.</string>
+    <string name="bt_define">Définir</string>
+
+    <string name="se_connecter_maj">SE CONNECTER</string>
+    <string name="nouveau_compte">Nouveau compte</string>
+    <string name="mon_compte">Mon compte</string>
+    <string name="ma_progression">MA PROGRESSION</string>
+    <string name="mes_informations">MES INFORMATIONS</string>
+    <string name="alerter_garden">Ici, je contrôle l’état général de mon potager</string>
+    <string name="changer">Mettre à jour</string>
+    <string name="mon_id_plantr">MON ID PLANTR</string>
+    <string name="ma_jardiniere">Mon potager</string>
+    <string name="mes_missions">Mes missions</string>
+    <string name="mon_equipe">Mon équipe</string>
+    <string name="my_irrig">Irrigation</string>
+    <string name="gestion_team">Gestion de mon équipe</string>
+    <string name="mes_jardinieres">Mes jardinières</string>
+    <string name="mes_abonnements">Mes abonnements</string>
+    <string name="mes_potagers">Mes potagers</string>
+    <string name="savoir_plus">En savoir plus sur notre</string>
+    <string name="tv_invite_team">Ici, j’invite les personnes qui jardinent\navec moi sur ce potager !</string>
+    <string name="privacy_poly">politique de confidentialité</string>
+    <string name="privacy_poly_ok">politique de confidentialité</string>
+
+    <string name="ajouter_potager">Ajouter un potager</string>
+    <string name="annuler_bouton">annuler</string>
+    <string name="ajouter_bouton">ajouter</string>
+    <string name="reglage_team">Configurer l\'accès à mon équipe</string>
+    <string name="text_reglage_team_card">J’accepte de recevoir des demandes d’intégration</string>
+    <string name="tv_util_text_by">par</string>
+
+    <string name="rang_debutant">Débutant</string>
+    <string name="choice_semer">Semer</string>
+    <string name="choice_planter">Planter</string>
+    <string name="savoir_plus_ok">En savoir plus sur notre</string>
+
+    <string name="entretenir_ma_jardiniere">Entretenir mon potager</string>
+    <string name="state_gardener">état de mon potager</string>
+    <string name="vent">Vent</string>
+    <string name="climat">CLIMAT</string>
+    <string name="mes_plantes">Mes plantes</string>
+
+    <!-- LAYOUT PROFILE -->
+    <string name="to_do"><font color='white'>à réaliser</font></string>
+    <string name="be_plant_in_progress"><font color='white'>Progression</font></string>
+    <string name="be_plant_my_task"><font color='white'>Soins</font></string>
+    <string name="be_plant_helper"><font color='white'>Infos</font></string>
+    <string name="to_done"><font color='white'>réalisées</font></string>
+    <string name="etage_one"><font color='white'>ÉTAGE 1</font></string>
+    <string name="etage_two">ÉTAGE 2</string>
+    <string name="title_team">Les membres\nde l\'équipe</string>
+    <string name="title_demande">Les demandes\nen attente</string>
+    <string name="etage_three">ÉTAGE 3</string>
+    <string name="etage_fourth">ÉTAGE 4</string>
+    <string name="rangee_fourth">RANGÉE 4</string>
+    <string name="rangee_three">RANGÉE 3</string>
+    <string name="rangee_two">RANGÉE 2</string>
+    <string name="rangee_one">RANGÉE 1</string>
+    <string name="my_tasks">Mes missions</string>
+    <string name="my_favs">Mes envies</string>
+    <string name="my_team">Mon équipe</string>
+    <string name="ajouter_une_plante">Ajouter une plante</string>
+    <string name="add_gardener">Ajouter un potager</string>
+    <string name="legend_add_gardener">Pour ajouter votre premier potager, vous\ndevez vous connecter à la Jardinière en\nscannant le QR Code situé sur cette dernière</string>
+    <string name="name_of_gardener">Nom de votre potager</string>
+    <string name="name_of_gardener_himself">Nom du potager</string>
+    <string name="add">AJOUTER</string>
+    <string name="succes_create_gardener"><p>Félicitations !</p><p>Votre potager est correctement configurée.</p><p>Souhaitez-vous lui donner un nom ?</p></string>
+    <string name="finish">TERMINER</string>
+    <string name="param_of_gardener">Réglage de mon potager</string>
+    <string name="name_of_this_gardener">Nom du potager</string>
+    <string name="availability_gardener">Veuillez indiquer votre disponibilité :</string>
+    <string name="next">SUIVANT</string>
+    <string name="small_dispo">Peu disponible</string>
+    <string name="very_dispo">Très disponible</string>
+    <string name="medium_dispo">Disponible</string>
+    <string name="level_1">Débutant</string>
+    <string name="level_2">Amateur</string>
+    <string name="level_3">Pro</string>
+    <string name="level_in_gardener"><p>Veuillez indiquer votre niveau en</p> jardinage :</string>
+    <string name="orientation_potager"><p>Veuillez indiquer l\'orientation de votre</p> potager :</string>
+    <string name="orientation_1">Ensoleillée</string>
+    <string name="orientation_2">Semi ensoleillée</string>
+    <string name="orientation_3">Ombragé</string>
+    <string name="tv_password_reseau">Veuillez saisir le mot de passe de ce Wifi :</string>
+    <string name="tips">Conseils</string>
+    <string name="rename_plants">RENOMMER LA PLANTE</string>
+    <string name="gardener_problem_success">LE PROBLÈME EST RÉGLÉ</string>
+    <string name="invit_friends">Inviter des amis</string>
+    <string name="txt_friends">Afin d\'inviter vos amis à rejoindre\n votre réseau, veuillez utiliser leurs ID\nPlantR, disponibles dans leurs profils\nutilisateur</string>
+    <string name="id_friends">ID PLANTR DE VOTRE AMI</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="features">Caractéristiques</string>
+    <string name="conseils_task_valide">c\'est fait !</string>
+    <string name="text_edit">Modifier</string>
+    <string name="name_of_my_plante">NOM DE VOTRE PLANTE</string>
+    <string name="hamburger_delete">Supprimer</string>
+    <string name="hamburger_modify">Renommer</string>
+    <string name="hamburger_add">Ajouter</string>
+    <string name="plant_description">Description</string>
+    <string name="task_description">Description :</string>
+    <string name="loading_plants">Chargement</string>
+
+    <string name="plant_association">Bonnes Associations</string>
+    <string name="plant_bad_association">Mauvaises Associations</string>
+
+    <string name="tv_gardener_undertop">Pour scanner le QR Code, veuillez utiliser la\ncaméra de votre téléphone.\nPour y accéder cliquer\nsur le bouton ci-dessous</string>
+    <string name="tv_add_gardener">Votre potager a bien été ajoutée !</string>
+    <string name="tv_dialog_add_gardener">Pour ajouter un potager veuillez\nscanner le QR Code situé sur\ncette dernière.</string>
+    <string name="tv_jumelage_success">Félicitations !</string>
+    <string name="tv_done_a_gardener_name">Souhaitez-vous lui donner un nom ?</string>
+    <string name="bt_finish">Terminer</string>
+    <!-- LAYOUT MES PLANTES -->
+    <string name="tv_confirmation_popup">OUI !</string>
+    <string name="tv_title_public_popup">Un problème avec votre</string>
+    <string name="tv_title_public_add_garden">Pour ajouter votre jardinière, veuillez\nscanner le QR Code situé sur\nvotre capteur.</string>
+    <string name="tv_title_public_add_kit_cle_en_main">Pour ajouter votre kit clé en main, veuillez\nscanner le QR Code situé sur\nvotre capteur.</string>
+    <string name="tv_title_public_add_kit_capteur_jardiniere">Pour ajouter votre kit capteur de jardinière, veuillez\nscanner le QR Code situé sur\nvotre capteur.</string>
+    <string name="tv_title_public_add_kit_capteur_carre">Pour ajouter votre kit capteur pour un carré de potager, veuillez\nscanner le QR Code situé sur\nvotre capteur.</string>
+    <string name="tv_title_public_add_kit_capteur_pot">Pour ajouter votre kit capteur de pot, veuillez\nscanner le QR Code situé sur\nvotre capteur.</string>
+    <string name="tv_title_public_add_kit_sensor">Pour ajouter votre kit capteur, veuillez\nscanner le QR Code situé sur\nvotre capteur.</string>
+    <string name="tv_title_public_add_kit_sensor_mural">Pour ajouter votre kit mural, veuillez\nscanner le QR Code situé sur\nvotre capteur.</string>
+    <string name="tv_title_public_add_parcelle">Pour ajouter votre Parcelle, veuillez\nscanner le QR Code situé sur\ncelui-ci !</string>
+    <string name="tv_scan_popup">Scanner le qrCode de la jardinière !</string>
+    <string name="alerter_import_image">Importation de l\'image réussi</string>
+    <string name="alerter_import_image_problem">Importation de l\'image échoué</string>
+    <string name="alerter_add_garden_success">Nouveau potager ajouté !</string>
+    <string name="alerter_choice_number_irrig">Entrez un nombre compris entre 1 et 100</string>
+    <string name="alerter_modif_threshold">Modification de seuil d\'irrigation envoyé</string>
+
+    <!-- LAYOUT POPUP -->
+    <string name="GARDENER_LOCK">Potager bien verrouillée</string>
+    <string name="GARDENER_UNLOCK">Potager bien déverrouillée</string>
+    <string name="JOIN_TEAM">a rejoint l\'équipe !</string>
+    <string name="REMOVE_MEMBER_TEAM">à bien était retiré des invitations !</string>
+    <string name="add_wishlist">à bien été ajoutée aux favoris.</string>
+    <!-- LAYOUT MANAGE TEAM -->
+    <string name="share_gardener">Vous êtes invité à rejoindre l’équipe du potager %s !</string>
+    <string name="tv_rej_team">Vous avez rejoint l\'équipe du potager</string>
+    <string name="tv_team_occuped_gardener">Une équipe de jardiniers est déjà aux\n petits soins pour ce potager !</string>
+    <string name="tv_team_follow">Souhaitez-vous suivre son évolution ?</string>
+    <string name="tv_subcribe">S\'abonner à ce potager</string>
+    <string name="check_cgu">J\'ai lu et j\'accepte la politique\nde confidentialité</string>
+    <string name="cgu">\n<h1><b>Politique de confidentialité</b></h1><br></br>\n Agrove a créé l\'application Agrove en tant qu\'application gratuite. Ce SERVICE est fourni gratuitement par Agrove et est destiné à être utilisé tel quel. Cette page est utilisée pour informer les visiteurs sur nos politiques de collecte, d\'utilisation et de divulgation des informations personnelles si quelqu\'un décide d\'utiliser notre service. Si vous choisissez d\'utiliser notre service, alors vous acceptez la collecte et l\'utilisation des informations en relation avec cette politique. Les informations personnelles que nous recueillons sont utilisées pour fournir et améliorer le service. Nous n\'utiliserons ni ne partagerons vos informations avec quiconque, sauf dans les conditions décrites dans la présente politique de confidentialité. Les termes utilisés dans cette politique de confidentialité ont la même signification que dans nos conditions générales, qui est accessible à Agrove, sauf indication contraire dans la présente politique de confidentialité. Chaque utilisateur peut nous contacter à contact@agrove.fr pour supprimer toutes les données collectées par les applications de l\'Agrove. \n<h1><b>\nCollecte et utilisation des informations</b></h1><br/>\n Pour une meilleure expérience, lors de l\'utilisation de notre service, nous pouvons vous demander de nous fournir certaines informations personnelles identifiables, y compris mais sans s\'y limiter, l\'utilisation de l\'appareil photo permet à l\'utilisateur de prendre une photo de lui-même dans la page \'profil\' et lui permet également d\'ajouter des photos du potager dans la page \'Mon potager\'. La position gps de l\'utilisateur est utilisée pour remplir le champ d\'adresse, mais aussi pour obtenir un rendu plus précis de la temperature moyenne dans la ville de l\'utilisateur lors de l\'affichage des paramètres climatiques. Les informations que nous demandons seront conservées par nous et utilisées comme décrit dans la présente politique de confidentialité. \n<h1><b>\nDonnées de journal</b></h1><br/>\n Nous tenons à vous informer que chaque fois que vous utilisez notre service, en cas d\'erreur dans l\'application, nous recueillons des données et des informations (par le biais de produits tiers) sur votre téléphone appelé Log Data. Ces données de connexion peuvent inclure des informations telles que l\'adresse IP de votre appareil, le nom de l\'appareil, la version du système d\'exploitation, la configuration de l\'application lors de l\'utilisation de notre service, l\'heure et la date de votre utilisation du service et d\'autres statistiques. \n<h1><b>\nCookies</b></h1><br/>\n Les cookies sont des fichiers contenant un petit nombre de données qui sont généralement utilisées comme identifiants uniques anonymes. Ils sont envoyés à votre navigateur par les sites web que vous visitez et sont stockés dans la mémoire interne de votre appareil. Ce service n\'utilise pas explicitement ces \'cookies\'. Cependant, l\'application peut utiliser le code de tiers et les bibliothèques qui utilisent des \'cookies\'\' pour collecter des informations et améliorer leurs services. Vous avez la possibilité d\'accepter ou de refuser ces cookies et de savoir quand un cookie est envoyé à votre appareil. Si vous choisissez de refuser nos cookies, il est possible que vous ne puissiez pas utiliser certaines parties de ce service. \n<h1><b>\nFournisseurs de services</b></h1><br/>\n Nous pouvons employer des entreprises et des personnes tierces pour les raisons suivantes : Pour faciliter notre service ; Pour fournir le service en notre nom ; pour fournir des services liés au service ; ou Pour nous aider à analyser l\'utilisation de notre service. Nous voulons informer les utilisateurs de ce Service que ces tiers ont accès à vos informations personnelles. La raison est d\'accomplir les tâches qui leur sont assignées en notre nom. Cependant, ils sont tenus de ne pas divulguer ou utiliser les informations à d\'autres fins. \n<h1><b>\nSécurité</b></h1><br/>\n Nous apprécions la confiance que vous nous accordez en nous fournissant vos informations personnelles, c\'est pourquoi nous nous efforçons d\'utiliser des moyens commercialement acceptables pour les protéger. Mais n\'oubliez pas qu\'aucune méthode de transmission sur Internet ou de stockage électronique n\'est sûre et fiable à 100 %, et que nous ne pouvons pas garantir sa sécurité absolue. Liens vers d\'autres sites Ce service peut contenir des liens vers d\'autres sites. Si vous cliquez sur un lien tiers, vous serez dirigé vers ce site. Notez que ces sites externes ne sont pas gérés par nous. Par conséquent, nous vous conseillons vivement de consulter la politique de confidentialité de ces sites. Nous n\'avons aucun contrôle et n\'assumons aucune responsabilité quant au contenu, aux politiques de confidentialité ou aux pratiques des sites ou services tiers. \n<h1><b>\nProtection de la vie privée des enfants</b></h1><br/>\n Ces services ne s\'adressent pas aux personnes âgées de moins de 3 ans. Nous ne recueillons pas sciemment d\'informations personnelles identifiables auprès d\'enfants de moins de 3 ans. Dans le cas où nous découvrons qu\'un enfant de moins de 3 ans nous a fourni des informations personnelles, nous les supprimons immédiatement de nos serveurs. Si vous êtes un parent ou un tuteur et que vous savez que votre enfant nous a fourni des informations personnelles, veuillez nous contacter afin que nous puissions prendre les mesures nécessaires. Modifications de la présente politique de confidentialité Nous pouvons mettre à jour notre politique de confidentialité de temps en temps. Nous vous conseillons donc de consulter régulièrement cette page pour prendre connaissance des modifications éventuelles. Nous vous informerons de tout changement en publiant la nouvelle politique de confidentialité sur cette page. Cette politique est en vigueur à partir du 2020-09-23 \n<h1><b>\nContact</b></h1><br/>\n Si vous avez des questions ou des suggestions concernant notre politique de confidentialité, n\'hésitez pas à nous contacter à l\'adresse contact@agrove.fr.\n</string>
+    <string name="tv_reset_password">Nous avons juste besoin de votre adresse email pour vous envoyer les instructions de réinitialisation de mot de passe</string>
+    <string name="SEMIS_LABEL">Semis</string>
+    <string name="RECOLTE_LABEL">Récolte</string>
+    <string name="delete_plant">Êtes vous sûr de vouloir\nsupprimer cette plante ?</string>
+    <string name="delete_plant_2">Êtes vous sûr de vouloir\nsupprimer</string>
+    <string name="delete_plant_3">des favoris ?</string>
+    <string name="alerter_send_to_garden">Votre demande à bien été transmise</string>
+
+<!-- THE MONTHS OF THE YEAR -->
+    <string name="M1">Janvier</string>
+    <string name="M2">Février</string>
+    <string name="M3">Mars</string>
+    <string name="M4">Avril</string>
+    <string name="M5">Mai</string>
+    <string name="M6">Juin</string>
+    <string name="M7">Juillet</string>
+    <string name="M8">Août</string>
+    <string name="M9">Septembre</string>
+    <string name="M10">Octobre</string>
+    <string name="M11">Novembre</string>
+    <string name="M12">Decembre</string>
+    <string name="tv_delete_member_team">Souhaitez-vous vraiment enlever\n cet utilisateur de l\'équipe ?</string>
+    <string name="tv_team_management">Gestion de l\'équipe</string>
+    <string name="tv_trad_kit_legend">Sélectionnez le type de pot dans lequel vous allez planter\nvotre kit capteur :</string>
+
+
+
+    <string name="days_one">L</string>
+    <string name="days_two">M</string>
+    <string name="days_three">M</string>
+    <string name="days_fourth">J</string>
+    <string name="days_five">V</string>
+    <string name="days_six">S</string>
+    <string name="days_seven">D</string>
+
+    <string name="month_one">J</string>
+    <string name="month_two">F</string>
+    <string name="month_three">M</string>
+    <string name="month_fourth">A</string>
+    <string name="month_five">M</string>
+    <string name="month_six">J</string>
+    <string name="month_seven">J</string>
+    <string name="month_height">A</string>
+    <string name="month_nive">S</string>
+    <string name="month_ten">O</string>
+    <string name="month_eleven">N</string>
+    <string name="month_twelve">D</string>
+    <string name="alerter_problem_garden_create">Il y a eu une erreur dans la création du potager</string>
+
+
+<!-- CHOICE GARDENER IN HOME FRAGMENT -->
+
+    <string name="menu_1">ticket ouvert</string>
+    <string name="menu_2">ticket fermé</string>
+
+    <string name="GARDENER_CHOICE">Que voulez-vous faire ?</string>
+    <string name="GARDENER_CHOICE_SUB">M\'abonner à ce potager !</string>
+    <string name="reponse_popup_soins">Oui je cherche une solution</string>
+    <string name="reponse_popup_soins_informer">Non, je m\'informe</string>
+    <string name="alerter_already_garden_1">Vous avez déjà</string>
+    <string name="alerter_already_garden_2">dans vos favoris.</string>
+    <string name="alerter_change_done">Changement effectué !</string>
+    <string name="alerter_sub_to_garden">Vous allez vous abonnez à ce potager</string>
+    <string name="alerter_private_garden">Mince ce potager est privée !</string>
+    <string name="sow_date_1">Semée le</string>
+
+
+    <string name="GARDENER_CHOICE_JOIN">Demander à rejoindre\nl\'équipe de cette jardnière !</string>
+    <string name="GARDENER_CHOICE_BODY">Une équipe est déjà au petit\nsoins pour ce potager\nque voulez-vous faire ?</string>
+    <string name="alerter_first_nav">Pour commencer à naviguer dans l\'application, ajoutez votre premier potager.</string>
+    <string name="alerter_name_ur_garden">Vous devez donner un nom à votre potager !</string>
+
+    <!-- ANDROID BLE -->
+    <string name="climat_non_detect">METEO</string>
+    <string name="climat_detect">Données climatiques de mon potager</string>
+    <string name="connect_capteur">SE CONNECTER AU « CAPTEUR BLE »</string>
+    <string name="deconnect_capteur">SE DECONNECTER DU « CAPTEUR BLE »</string>
+    <string name="deconnect_capteur_resa">CAPTEUR BLE déjà utilisée sur</string>
+
+    <string name="notifyTitle">Conseil</string>
+    <string name="gpsNotifyMsg">Le balayage Bluetooth du téléphone actuel nécessite que la fonction de localisation soit activée.</string>
+    <string name="setting">Allez dans les paramètres</string>
+    <string name="cancel">Annuler</string>
+    <string name="dialog_title_join_my_team">Comment demander à\nrejoindre une équipe ?</string>
+    <string name="dialog_title_my_team">Pourquoi constituer une équipe de jardiniers ?</string>
+
+    <string name="dialog_my_team">Pour collaborer au jardin en toute simplicité ! Tous les membres d’une équipe ont accès aux mêmes fonctionnalités.\n\nDès que l’un d’entre eux réalise une mission, les autres sont informés par une notification.</string>
+    <string name="dialog_join_team">Les personnes qui ont accès au Qr Code de votre potager connecté peuvent demander à rejoindre votre équipe.\n\nIl leur suffit de scanner le Qr Code avec leur appli Agrove depuis l’ajout d’un potager.\n\nPour ne plus recevoir de demande d’ajout, rendez-vous dans les réglages, en haut à droite de cet écran.</string>
+    <string name="GARDENER_NOTIF_CLEAN">Bravo ! Toutes les conditions sont bonnes pour garantir la croissance de vos cultures !\nVous recevrez des alertes ici en cas de problème.</string>
+    <string name="start_scan">Démarrer le scan</string>
+    <string name="stop_scan">Arrêter le balayage</string>
+    <string name="expand_search_settings">Développer les paramètres de recherche</string>
+    <string name="retrieve_search_settings">Rangez les paramètres de recherche</string>
+    <string name="connect_fail">La connexion a échoué</string>
+    <string name="active_disconnected">Déconnecté</string>
+    <string name="disconnected">Connexion perdu</string>
+    <string name="please_open_blue">Veuillez d\'abord activer Bluetooth</string>
+    <string name="select_operation_type">Sélectionner le type d\'opération</string>
+    <string name="characteristic">Caractéristique</string>
+
+    <string name="cocorico">Connexion en cours mamene</string>
+    <string name="data_changed"> Ces données sont transmises</string>
+    <string name="read">Lire</string>
+    <string name="write">Écrire à</string>
+    <string name="open_notification">Activer les notifications</string>
+    <string name="close_notification">Désactiver les notifications</string>
+    <string name="service_list">Liste des services</string>
+    <string name="characteristic_list">Liste des fonctionnalités</string>
+    <string name="console">Console d\'exploitation</string>
+    <string name="name">Nom de diffusion de l\'équipement.</string>
+    <string name="mac">MAC:</string>
+    <string name="service">Service</string>
+    <string name="type">Type de service (service principal)</string>
+    <string name="scan_setting">Vous pouvez configurer ci-dessous les conditions de l\'appareil à scanner, qui peut être vide.</string>
+    <string name="setting_name">Saisissez le nom de diffusion du périphérique Bluetooth, séparé par une virgule entre plusieurs</string>
+    <string name="setting_mac">Entrez l\'adresse mac du dispositif Bluetooth</string>
+    <string name="setting_uuid">Saisissez l\'UUID du périphérique Bluetooth, séparé par une virgule entre plusieurs</string>
+    <string name="input_hex">Veuillez entrer une commande</string>
+    <string name="connect">ON</string>
+    <string name="connected">Connecté</string>
+    <string name="disconnect">OFF</string>
+    <string name="enter">Entrer</string>
+    <string name="autoconnect">AutoConnect ?</string>
+    <string name="potager_classique">Potager Classique</string>
+    <string name="kits_potagers_connect_s">Kits potagers connectés</string>
+    <string name="potager_agrove">Potager Agrove</string>
+    <string name="en_carr_en_pot_ou_en_jardini_re">En carré, en pot ou en jardinière</string>
+    <string name="choisissez_un_type_de_potager">Choisissez un type de potager :</string>
+    <string name="quel_kit_potager_agrove_nvoulez_vous_ajouter">Quel kit potager agrove\nvoulez-vous ajouter ?</string>
+    <string name="valider">Valider</string>
+    <string name="ensoleillement">Ensoleillement</string>
+    <string name="orientation">Orientation</string>
+
+    <string name="rename_ur_garden">Renommez votre potager</string>
+    <string name="ur_garden">Nom de votre potager</string>
+    <string name="ur_garden_config">Configurez votre potager</string>
+
+    <string name="name_menu_classic_1">Carré potager</string>
+    <string name="name_menu_classic_2">Pot</string>
+    <string name="name_menu_classic_3">Jardinière</string>
+
+    <string name="tv_util_to">Jusqu\'à :</string>
+
+
+    <string name="title_what_choice_garden">Quelle est la taille de votre jardinière ?</string>
+
+    <string name="small">Petite</string>
+    <string name="medium">Moyenne</string>
+    <string name="big">Grande</string>
+
+    <string name="location_1">Jardin</string>
+    <string name="location_2">Terasse</string>
+    <string name="location_3">Balcon</string>
+    <string name="location_4">Rambarde de fenêtre</string>
+    <string name="location_5">Intérieur</string>
+
+    <string name="orientation_place_1">Nord</string>
+    <string name="orientation_place_2">Sud</string>
+    <string name="orientation_place_3">Est</string>
+    <string name="orientation_place_4">Ouest</string>
+    <string name="orientation_place_5">Sud Est</string>
+    <string name="orientation_place_6">Nord Est</string>
+    <string name="orientation_place_7">Sud Ouest</string>
+    <string name="orientation_place_8">Nord Ouest</string>
+
+    <string name="tv_location">Emplacement</string>
+    <string name="tv_orientation">Orientation</string>
+    <string name="d_nomination">Dénomination</string>
+
+    <string name="not_defined">Non définie</string>
+    <string name="sunlight_1">A l\'ombre toute la journée</string>
+    <string name="sunlight_2">Soleil le matin</string>
+    <string name="sunlight_3">Soleil l\'après-midi</string>
+    <string name="sunlight_4">Soleil toute la journée</string>
+
+    <string name="without_alert">Aucune alerte pour le moment</string>
+    <string name="alert_plantr_1">Ici, je contrôle l’état général de mon potager</string>
+    <string name="dialog_deco_1">Voulez-vous vraiment vous\ndéconnecter ?</string>
+    <string name="tv_dialog_deco_1">Se déconnecter</string>
+    <string name="tv_dialog_profil_1">Voulez-vous vraiment retirer\n</string>
+    <string name="tv_dialog_profil_2">de la liste</string>
+    <string name="tv_produit_kit_capteur">Le kit capteur</string>
+    <string name="tv_produit_kit_mural">Le kit mural</string>
+    <string name="tv_produit_kit_main">Le kit clé en main</string>
+    <string name="tv_produit_kit_parcelle">Le kit parcelle</string>
+
+    <string name="tv_fortement_recommand">Fortement recommandée</string>
+    <string name="tv_conseil">Conseillée</string>
+    <string name="tv_recommand">Recommandée</string>
+    <string name="tv_histo_empty">Votre historique de mission est vide.</string>
+    <string name="tv_mission_legend_consult">SELECTIONNER UNE DATE POUR CONSULTER\nVOS ANCIENNES OU VOS FUTUR MISSIONS.</string>
+    <string name="tv_numero_1">Première</string>
+    <string name="tv_numero_2">Deuxième</string>
+    <string name="tv_numero_3">Troisième</string>
+    <string name="tv_numero_4">Quatrième</string>
+    <string name="tv_size_1">Jusqu\'à 50cm2</string>
+    <string name="tv_size_4">À partir de</string>
+    <string name="tv_size_2">Jusqu\'à 75cm2</string>
+    <string name="tv_size_3">Jusqu\'à 1m2</string>
+
+
+    <string name="tv_state_good">Bon</string>
+    <string name="tv_state_medium">Moyen</string>
+    <string name="tv_state_bad">Mauvais</string>
+    <string name="tv_util_more">Plus de :</string>
+
+    <string name="tv_information">Informations</string>
+
+
+    <string name="tv_description_1">Exposition</string>
+    <string name="tv_description_2">Eau</string>
+    <string name="tv_description_3">Résistance au gel</string>
+    <string name="tv_description_4">Hauteur</string>
+
+    <string name="tv_numero_rank_1">Première rangée</string>
+    <string name="tv_numero_rank_2">Deuxième rangées</string>
+    <string name="tv_numero_rank_3">Troisième rangées</string>
+    <string name="tv_numero_rank_4">Quatrième rangées</string>
+
+    <string name="tv_ranked">Rangée</string>
+
+    <string name="tv_rank">rangées</string>
+    <string name="tv_alert_problem_tips">Le problème n\'est pas résolu</string>
+
+
+    <string name="tv_surname_plant">Il est possible lors de l\'ajout d\'une plante\nde lui donner un surnom.</string>
+    <string name="tv_association">s\'associe bien avec\nles espèces suivantes :</string>
+    <string name="tv_etage">Étage</string>
+    <string name="tv_toFind">Rechercher</string>
+    <string name="tv_place">Occupation</string>
+    <string name="tv_suggest">Les suggestions du moment</string>
+    <string name="tv_composition">composition actuelle de la jardinière</string>
+
+
+<!--    <string name="tv_title_alert_air_humidity">Le taux d\'humidité de l\'air est bas</string>-->
+<!--    <string name="tv_description_alert_air_humidity">Vérifier le niveau d\'eau et le niveau de batterie.\nAssurez vous que les tuyeaux ne sont pas bouchés et que l\'eau coule des gicleurs.</string>-->
+<!--    <string name="tv_button_problem_alert_air_humidity">L\'eau ne coule pas.</string>-->
+<!--    <string name="tv_button_ok_alert_air_humidity">L\'eau coule.</string>-->
+
+    <!--    <string name="tv_title_alert_solar">La luminosité est un peu trop faible !</string>-->
+    <!--    <string name="tv_description_alert_solar">Vérifier que le potager est assez exposé au soleil afin de ne pas abîmer les racines.</string>-->
+    <!--    <string name="tv_button_ok_alert_solar">C\'est fait !</string>-->
+    <!--    <string name="tv_button_problem_alert_solar">Le potager est encore mal exposé.</string>-->
+    <string name="tv_none_plant_in_wishlist">Vous n’avez pas encore ajouté de plantes dans votre wishlist.  Ajoutez vos plantes préférées ici pour recevoir des rappels pour les semer ou planter à la bonne saison !</string>
+
+    <string name="tv_title_alert_battery">Chargez la batterie</string>
+    <string name="tv_description_alert_battery">Placez le panneau solaire dans un environnement plus lumineux ou rechargez la batterie via une prise secteur </string>
+    <string name="tv_button_problem_alert_battery">Pas encore !</string>
+    <string name="tv_button_ok_alert_battery">C\'est fait !</string>
+
+    <string name="tv_title_alert_humidity">La terre est trop sèche !</string>
+    <string name="tv_description_alert_humidity">Vérifier que le niveau d\'eau dans le réservoir est suffisant et que votre panneau solaire est bien ensoleillé en journée. Arrosez vos plants pour qu\'ils ne meurent pas et redémarrez le produit en appuyant sur le bouton reset.</string>
+    <string name="tv_button_problem_alert_humidity">L\'eau ne coule pas.</string>
+    <string name="tv_button_ok_alert_humidity">L\'eau coule.</string>
+
+    <string name="tv_title_alert_temperature">La température s\'approche de 0°C</string>
+    <string name="tv_description_alert_temperature">Il y a un risque de gel. Protéger vos plantes si vous le pouvez et vider l\'eau du réservoir. Le gel peut tuer vos plants les plus fragiles et endommager la pompe.</string>
+    <string name="tv_button_ok_alert_temperature">C\'est fait !</string>
+    <string name="tv_button_problem_alert_temperature">Pas encore.</string>
+
+    <string name="tv_title_alert_water">Remplissez \nle reservoir. </string>
+    <string name="tv_description_alert_water">Le niveau d\'eau du réservoir est trop bas, pensez à en rajouter jusqu\'au maximum.</string>
+    <string name="tv_button_ok_alert_water">C\'est fait !</string>
+    <string name="tv_button_problem_alert_water">Le potager n\'a pas d\'eau</string>
+
+    <string name="tv_title_alert_problem_lora">Le capteur n\'envoie plus de données depuis 24h</string>
+    <string name="tv_description_alert_problem_lora">Le capteur n\'envoie plus de donnée. Appuyez sur le bouton reset.  </string>
+
+
+    <string-array name="countries">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+    </string-array>
+
+    <!-- IRRIGATION STRING GESTION -->
+    <string name="tv_button_define">Définir</string>
+    <string name="tv_button_defined">Ok</string>
+    <string name="tv_btn_echec_irrig">Réessayer</string>
+    <string name="tv_title_echec_irrig">Le dernier réglage a échoué</string>
+    <string name="tv_description_echec_irrig">Votre connexion LoRa est probablement en cause.</string>
+
+    <!-- NOTIFICATION EXTERNE STRING GESTION -->
+    <string name="tv_battery_title">🚨 Batterie faible !</string>
+    <string name="tv_battery_description">Veillez à bien orienter le panneau solaire.</string>
+
+    <string name="tv_capa_title">💧 L\'humidité du sol est trop faible !</string>
+    <string name="tv_capa_description">Votre terre est trop sèche. Vérifiez que le système d\'arrosage fonctionne correctement. En cas de problème vous pouvez arroser directement vous même.</string>
+
+    <string name="tv_waterLevel_title">🚰 Le réservoir est bientôt vide !</string>
+    <string name="tv_waterLevel_description">Remplissez votre réservoir dès que possible</string>
+
+    <string name="tv_panne_title">⚠ Attention</string>
+    <string name="tv_panne_description">Un problème à été détécté avec les capteurs</string>
+
+    <string name="tv_panne_title_plantr">⚠  Perte de connexion LoRa</string>
+    <string name="tv_date_format_panne">Dernière mise à jour le :</string>
+
+
+</resources>

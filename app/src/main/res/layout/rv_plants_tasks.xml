@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/listePlants"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_height="wrap_content"
+        android:background="@color/white_plantr">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_bloc_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_plants"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/logo_green"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name_tasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/light_black_plantr"
+                android:textSize="17sp"
+                android:textAllCaps="true"
+                android:includeFontPadding="false"
+                android:textStyle="bold"
+                tools:text="Nom_de_la_tâches"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/iv_plants"
+                app:layout_constraintTop_toTopOf="@id/iv_plants" />
+
+            <ImageView
+                android:id="@+id/iv_priority"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/important"
+                android:visibility="gone"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginBottom="3dp"
+                app:layout_constraintTop_toTopOf="@id/tv_name_tasks"
+                app:layout_constraintBottom_toBottomOf="@id/tv_name_tasks"
+                app:layout_constraintStart_toEndOf="@id/tv_name_tasks"
+       />
+            <TextView
+                android:id="@+id/tv_name_plants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/light_black_plantr"
+                android:textSize="15sp"
+                android:layout_marginEnd="15dp"
+                tools:text="Nom_de_la_plante"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/iv_plants"
+                app:layout_constraintEnd_toStartOf="@id/iv_plants"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_nameUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/dark_grey_plantr"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                tools:text="NameUser"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_name_tasks"
+                app:layout_constraintStart_toStartOf="@id/tv_name_tasks"/>
+
+            <TextView
+                android:id="@+id/tv_date_realized"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/extra_light_black_plantr"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="15dp"
+                tools:text="Date"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_nameUser"
+                app:layout_constraintTop_toBottomOf="@id/tv_name_tasks"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_plants">
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:id="@+id/view_underline"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/grey_plantr"
+            android:layout_marginStart="65dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_bloc_click"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_underline" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

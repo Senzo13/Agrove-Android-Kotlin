@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.myPlants.MesPlantesAdapter">
+<data>
+    <variable name="localLang" type="String"/>
+</data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/listePlants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:clipToPadding="false"
+        android:background="@color/white_plantr"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_mes_plantes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white_plantr"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_profil"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="2dp"
+                    android:scaleType="centerInside"
+                    tools:src="@color/black_plantr"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_name_subscriber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/light_black_plantr"
+                    android:textSize="17sp"
+                    app:layout_constraintStart_toEndOf="@id/iv_profil"
+                    app:layout_constraintTop_toTopOf="@id/iv_profil"
+                    tools:text="Nom du membre" />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_rank_friends"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="18dp"-->
+<!--                    android:fontFamily="@font/roboto_regular"-->
+<!--                    android:text="@string/rang_debutant"-->
+<!--                    android:textColor="@color/extra_light_black_plantr"-->
+<!--                    android:textSize="15sp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toEndOf="@id/iv_profil"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/tv_name_subscriber" />-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toEndOf="@id/iv_profil"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name_subscriber"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_profil">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity=""
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <ImageView
+                        android:id="@+id/bt_menu_valide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:src="@drawable/confirmer_btn"
+                        android:src='@{localLang.equals("fr") ? @drawable/confirmer_btn : @drawable/confirmer_btn_en}'
+                        />
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/bt_menu_delete"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/CONFIRM_2"-->
+<!--                    android:textAllCaps="true"-->
+<!--                    android:layout_marginStart="18dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:minHeight="0dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:textColor="@color/white_plantr"-->
+<!--                    android:textColorHighlight="#68DDA4"-->
+<!--                    app:backgroundTint="@color/green_plantr"-->
+<!--                    app:layout_constraintStart_toEndOf="@id/iv_profil"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@id/iv_profil"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/tv_name_subscriber"/>-->
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginStart="4dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent">
+                        <ImageView
+                        android:id="@+id/bt_menu_delete"
+                        android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:src="@drawable/supprimer_btn"
+                            android:src='@{localLang.equals("fr") ? @drawable/supprimer_btn : @drawable/supprimer_btn_en}'
+                            />
+
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/bt_menu_valide"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/delete"-->
+<!--                    android:textAllCaps="true"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginStart="16dp"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:minHeight="0dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:textColor="@color/white_plantr"-->
+<!--                    android:textColorHighlight="#68DDA4"-->
+<!--                    app:backgroundTint="@color/red_progress_plantr"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@id/iv_profil"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/tv_name_subscriber"/>-->
+
+                    </LinearLayout>
+                </LinearLayout>
+                </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</layout>

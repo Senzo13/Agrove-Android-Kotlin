@@ -1,0 +1,126 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#68DDA4</item>
+        <item name="android:statusBarColor">@color/statusBarColor</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="textInputStyle">@style/Widget.MyApp.TextInputLayout</item>
+    </style>
+    <style name="AlreadyPlantCalendar" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/green_plantr</item>
+        <item name="colorControlActivated">@color/greenFonce_plantr</item>
+        <item name="android:windowBackground">@color/white_plantr</item> <!--calendar background-->
+        <item name="android:textColorPrimary">@color/black_plantr</item> <!--days of the month-->
+        <item name="android:textColorSecondary">@color/white_plantr</item>    <!--days of the week-->
+        <item name="android:selectableItemBackgroundBorderless">@null</item>
+        <item name="colorControlHighlight">@color/greenFonce_plantr</item>
+    </style>
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <!-- change color of switch -->
+    <style name="mySwitch">
+        <item name="android:colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppThemeDate" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#68DDA4</item>
+        <item name="android:statusBarColor">@color/statusBarColor</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="textInputStyle">@style/Widget.MyApp.TextInputLayout</item>
+    </style>
+    <style name="TabLayoutStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="WhiteProgressTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorAccent">@color/white_plantr</item>
+    </style>
+    <style name="Widget.AppCompat.SpinnerSearch" parent="Base.Widget.AppCompat.Spinner">
+        <item name="hintEnabled">false</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="SpinnerDatePickerDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:calendarViewShown">false</item>
+        <item name="android:datePickerMode">spinner</item>
+        <item name="textInputStyle">@style/Widget.MyApp.TextInputLayout</item>
+    </style>
+    <style name="RottorInputTextOutlined" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintEnabled">false</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+
+    </style>
+    <style name="testo" parent="@android:style/Widget.DeviceDefault.DatePicker">
+
+        <item name="android:textColor">#68DDA4</item>
+
+    </style>
+    <style name="DialogTheme" parent="android:Theme.Holo.Light.Dialog.NoActionBar.MinWidth">
+        <item name="colorAccent">@color/green_plantr</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@color/green_plantr</item>
+        <item name="colorPrimary">@color/green_plantr</item>
+    </style>
+    <style name="GreenProgressTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorAccent">@color/green_plantr</item>
+    </style>
+    <style name="GreenFonceProgressTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorAccent">@color/greenFonce_plantr</item>
+    </style>
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView" >
+    <!-- Text Size -->
+    <item name="android:textSize">15sp</item>
+    <!-- Query Text Color -->
+    <item name="android:textColorPrimary">@color/black_plantr</item>
+    <!-- Hint Color -->
+    <item name="android:textColorHint">@color/light_black_plantr</item>
+    <!-- Icon Color -->
+    <item name="android:tint">@color/color_search</item>
+</style>
+    <style name="Widget.MyApp.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="android:textColor">@color/green_plantr</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+    <style name="PopupMenuPlantR" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textColor">@color/light_black_plantr</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="textAppearanceSmallPopupMenu">@style/myPopupMenuTextAppearanceSmall</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/myPopupMenuTextAppearanceSmall</item>
+        <item name="android:itemBackground">@android:color/white</item>
+    </style>
+    <style name="myPopupMenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu">
+
+    </style>
+    <style name="myPopupMenuTextAppearanceSmall" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="myPopupMenuTextAppearanceLarge" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large">
+        <item name="android:textColor">#000000</item>
+    </style>
+</resources>
